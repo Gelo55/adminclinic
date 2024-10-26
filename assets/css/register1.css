@@ -1,0 +1,112 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0056b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Registration Container */
+.registration-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out forwards; /* Apply fadeIn animation */
+}
+
+/* Registration Box */
+.registration-box {
+    padding: 20px;
+}
+
+/* Header Style */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 15px;
+}
+
+/* Label Style */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+/* Input Field Style */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+/* Input Field Focus Style */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Error Message Style */
+.error {
+    color: red;
+    font-size: 0.85em;
+}
+
+/* Submit Button Style */
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Submit Button Hover Effect */
+.submit-button:hover {
+    background-color: #002244;
+}
+
+/* Logo Style */
+.logo {
+    width: 100px;
+    margin-bottom: 15px;
+    margin-left: 120px;
+    opacity: 1; /* Corrected from 5 to 1 */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply fadeIn animation */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Optional: add vertical movement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

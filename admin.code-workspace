@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "D:/Login/assets/vectors"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "admin"
+	}
+}

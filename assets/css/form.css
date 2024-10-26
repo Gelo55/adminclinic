@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    height: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.474);
+}
+
+img{
+    height: 10%;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
