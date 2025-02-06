@@ -857,129 +857,138 @@ background-color: #555; /* Scrollbar color on hover */
 
 
 
-.container{
- height: 100%;
- width: 100%;
+
+.container {
+  height: 100%;
+  width: 100%; /* Adjust width to take full available space */
+  margin: 0 auto; /* Center container horizontally */
+  padding: 0; /* Ensure no extra padding */
+  overflow: hidden;
 }
 
 /* --FRAME -- */
 .frame {
   background-color: rgba(168, 168, 168, 0.2); 
   height: 90vh;
-  width: 100%;
+  width: 100%; /* Adjust width to be responsive */
+  max-width: 1500px; /* Limit maximum width to 1500px */
+  margin: 0 auto; /* Center frame within the container */
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px; 
   box-sizing: border-box; 
   transition: padding 0.3s ease; 
 }
+
 .frame a{
   text-decoration: none;
   color: black;
   width: 10%;
 }
 
-.box{
-    height: 50%;
-    width: 20%;
-    box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
-    color: black;
-    background-color: #560007;
-    border-radius: 5%;
+.disease-title{
+    font-size: 30px;
     position: relative;
-    left: 25%;
-    top: 10%;
+    left: 32%;
 }
 
-.box h1{
-    font-size: 20px;
-    color: white;
+.card-student{
+    width: 15%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
     left: 20%;
-    top: 20%;
+    top: -1%;
 }
 
-.box footer{
-    background-color: #560007;
-    border-top: 5px solid white;
+.stud{
+    font-size: 40px;
+}
+
+.card-professor{
+    width: 15%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
-    top: 40%;
+    left: 41%;
+    top: -23%;
 }
 
-.box a{
-    font-size: 20px;
-    color: white;
+.prof{
+    font-size: 40px;
+}
+
+.card-employee{
+    width: 15%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
-    left: 30%;
-    top: 10px;
+    left: 62%;
+    top: -45%;
 }
 
-.box a:hover{
+.emp{
+    font-size: 40px;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 8px;
+    border-radius: 4px;
+    background: #e0e0e0;
+    margin-top: 10px;
+    position: relative;
+}
+.progress {
+    height: 100%;
+    border-radius: 4px;
+}
+.card-student .progress { background: red; width: 20%; }
+.card-professor .progress { background: red; width: 26%; }
+.card-employee .progress { background: red; width: 30%; }
+
+.dropdown {
+  position: relative;
+  top: -240px;
+  left: 5%;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
   color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
-
-#data1{
-  font-size: 100px;
-  position: relative;
-  left: 33%;
-  top: 30%;
+.dropdown-content a:hover {
+  background-color: #ddd;
+  width: 80%;
 }
-
-.box2{
-    height: 50%;
-    width: 20%;
-    box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
-    color: black;
-    background-color: #005a8e;
-    border-radius: 5%;
-    position: relative;
-    left: 55%;
-    top: -42%;
-}
-
-.box2 h1{
-    font-size: 20px;
-    color: white;
-    position: relative;
-    left: 37%;
-    top: 20%;
-}
-
-.box2 footer{
-    background-color: #005a8e;
-    border-top: 5px solid white;
-    position: relative;
-    top: 40%;
-}
-
-.box2 a{
-    font-size: 20px;
-    color: white;
-    position: relative;
-    left: 30%;
-    top: 10px;
-}
-
-.box2 a:hover{
-  color: black;
-}
-
-
-#data2{
-  font-size: 100px;
-  position: relative;
-  left: 33%;
-  top: 30%;
-}
-
-
-.clinlogo{
-  height: 150px;
-  width: 10%;
-  border-radius: 100px;
-  position: relative;
-  left: 45%;
-  top: 30px;
-
+.dropdown button {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  height: 40px;
+  width: 80px;
 }
 
 /* Style for notification box */

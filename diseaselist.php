@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>Clinic Management System</title>
-    <link rel="stylesheet" href="assets/css/studoption.css">
+    <link rel="stylesheet" href="assets/css/disease.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
@@ -24,7 +24,7 @@
      <div class="container">
     <div class="head-title">
 				<div class="left">
-					<h1>Student Data</h1>
+					<h1>Disease List</h1>
 					
 				</div>
     </div> 
@@ -35,26 +35,38 @@
 <!--#################################################################################-->
 
     <div class="container">
-        
 <!-- frame -->
 <div class= "frame">
+<h1 class="disease-title" >Most Number of Disease as of today</h1>
+<div class="card-student">
+            <div class="title">Asthma</div>
+            <div class="stats">
+                <strong class="stud">105</strong>
+            </div>
+            <div class="progress-bar"><div class="progress"></div></div>
+        </div>
+        <div class="card-professor">
+            <div class="title">cough</div>
+            <div class="stats">
+                <strong class="prof">127</strong>
+            </div>
+            <div class="progress-bar"><div class="progress"></div></div>
+        </div>
+        <div class="card-employee">
+            <div class="title">fever</div>
+            <div class="stats">
+              <strong class="emp">147</strong>
+            </div>
+            <div class="progress-bar"><div class="progress"></div></div>
+        </div>
 
-<div class="cliniclogo">
-  <img src="assets/images/clinlogo.jpg" alt="" class="clinlogo">
-</div>
-
-<div class="box">
-    <h1>Senior High School</h1>
-    <span><i class="bx bx-user" id="data1"></i></span>
-    <footer><a href="shsdept.php">Click to View</a></footer>
-</div>
-
-
-<div class="box2">
-    <h1>College</h1>
-    <span><i class="bx bx-user" id="data2"></i></span>
-    <footer><a href="college.php">Click to View</a></footer>
-</div>
+        <div class="dropdown">
+        <button onclick="toggleDropdown()">Dropdown</button>
+        <div class="dropdown-content" id="dropdownMenu">
+            <a href="#">Asthma</a>
+            <a href="#">Cough</a>
+            <a href="#">Fever</a>
+        </div>
     
     </div>
 </div>
@@ -108,6 +120,30 @@ for (i = 0; i < dropdown.length; i++) {
     dropdown.classList.toggle("active"); // Toggle the dropdown visibility
 });
 </script>
+
+<script>
+        function toggleDropdown() {
+            var menu = document.getElementById("dropdownMenu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+
+        // Close dropdown when clicking outside
+        window.onclick = function(event) {
+            if (!event.target.matches('button')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
 
 </body>
 </html>

@@ -857,21 +857,28 @@ background-color: #555; /* Scrollbar color on hover */
 
 
 
-.container{
- height: 100%;
- width: 100%;
+
+.container {
+  height: 100%;
+  width: 100%; /* Adjust width to take full available space */
+  margin: 0 auto; /* Center container horizontally */
+  padding: 0; /* Ensure no extra padding */
+  overflow: hidden;
 }
 
 /* --FRAME -- */
 .frame {
   background-color: rgba(168, 168, 168, 0.2); 
   height: 90vh;
-  width: 100%;
+  width: 100%; /* Adjust width to be responsive */
+  max-width: 1500px; /* Limit maximum width to 1500px */
+  margin: 0 auto; /* Center frame within the container */
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px; 
   box-sizing: border-box; 
   transition: padding 0.3s ease; 
 }
+
 .frame a{
   text-decoration: none;
   color: black;
@@ -879,107 +886,439 @@ background-color: #555; /* Scrollbar color on hover */
 }
 
 .box{
-    height: 50%;
+    height: 30%;
     width: 20%;
     box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
     color: black;
-    background-color: #560007;
+    background-color: white;
     border-radius: 5%;
     position: relative;
-    left: 25%;
-    top: 10%;
+    left: 5%;
+    top: -5%;
 }
 
-.box h1{
-    font-size: 20px;
-    color: white;
-    position: relative;
-    left: 20%;
-    top: 20%;
-}
-
-.box footer{
-    background-color: #560007;
-    border-top: 5px solid white;
-    position: relative;
-    top: 40%;
+.box header{
+  height: 70px;
+  background-color: limegreen;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 
 .box a{
-    font-size: 20px;
-    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    color: black;
     position: relative;
     left: 30%;
-    top: 10px;
-}
-
-.box a:hover{
-  color: black;
-}
-
-#data1{
-  font-size: 100px;
-  position: relative;
-  left: 33%;
-  top: 30%;
-}
-
-.box2{
-    height: 50%;
-    width: 20%;
-    box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
-    color: black;
-    background-color: #005a8e;
-    border-radius: 5%;
-    position: relative;
-    left: 55%;
-    top: -42%;
-}
-
-.box2 h1{
-    font-size: 20px;
-    color: white;
-    position: relative;
-    left: 37%;
     top: 20%;
 }
 
-.box2 footer{
-    background-color: #005a8e;
-    border-top: 5px solid white;
+.box a:hover{
+  border-bottom: 1px solid white;
+}
+
+.box .stem{
+    font-size: 15px;
+    color: black;
     position: relative;
-    top: 40%;
+    left: 10%;
+    top: 5px;
+}
+
+
+.box2{
+  height: 30%;
+  width: 20%;
+  box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
+  color: black;
+  background-color: white;
+  border-radius: 5%;
+  position: relative;
+  left: 27%;
+  top: -35.5%;
+}
+
+.box2 header{
+  height: 70px;
+  background-color: red;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 
 .box2 a{
-    font-size: 20px;
-    color: white;
-    position: relative;
-    left: 30%;
-    top: 10px;
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
+  position: relative;
+  left: 35%;
+  top: 20%;
 }
 
 .box2 a:hover{
+border-bottom: 1px solid white;
+}
+
+.box2 .abm{
+  font-size: 15px;
   color: black;
+  position: relative;
+  left: 10%;
+  top: 5px;
 }
 
 
-#data2{
-  font-size: 100px;
+.box3{
+  height: 30%;
+  width: 20%;
+  box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
+  color: black;
+  background-color: white;
+  border-radius: 5%;
   position: relative;
-  left: 33%;
-  top: 30%;
+  left: 49%;
+  top: -66%;
+}
+
+.box3 header{
+  height: 70px;
+  background-color: blue;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.box3 a{
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
+  position: relative;
+  left: 30%;
+  top: 20%;
+}
+
+.box3 a:hover{
+border-bottom: 1px solid white;
+}
+
+.box3 .humss{
+  font-size: 15px;
+  color: black;
+  position: relative;
+  left: 10%;
+  top: 5px;
+}
+
+
+.box4{
+  height: 30%;
+  width: 20%;
+  box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
+  color: black;
+  background-color: white;
+  border-radius: 5%;
+  position: relative;
+  left: 71%;
+  top: -96.5%;
+}
+
+.box4 header{
+  height: 70px;
+  background-color: pink;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.box4 a{
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
+  position: relative;
+  left: 40%;
+  top: 20%;
+}
+
+.box4 a:hover{
+border-bottom: 1px solid white;
+}
+
+.box4 .he{
+  font-size: 15px;
+  color: black;
+  position: relative;
+  left: 27%;
+  top: 5px;
+}
+
+
+.box5{
+  height: 30%;
+  width: 20%;
+  box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
+  color: black;
+  background-color: white;
+  border-radius: 5%;
+  position: relative;
+  left: 38%;
+  top: -90%;
+}
+
+.box5 header{
+  height: 70px;
+  background-color: orange;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.box5 a{
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
+  position: relative;
+  left: 40%;
+  top: 20%;
+}
+
+.box5 a:hover{
+border-bottom: 1px solid white;
+}
+
+.box5 .ict{
+  font-size: 15px;
+  color: black;
+  position: relative;
+  left: 10%;
+  top: 5px;
+}
+
+
+.box6{
+  height: 30%;
+  width: 20%;
+  box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
+  color: black;
+  background-color: white;
+  border-radius: 5%;
+  position: relative;
+  left: 15%;
+  top: -120.5%;
+}
+
+.box6 header{
+  height: 70px;
+  background-color: yellow;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.box6 a{
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
+  position: relative;
+  left: 40%;
+  top: 20%;
+}
+
+.box6 a:hover{
+border-bottom: 1px solid white;
+}
+
+.box6 .gas{
+  font-size: 15px;
+  color: black;
+  position: relative;
+  left: 20%;
+  top: 5px;
+}
+
+
+.box7{
+  height: 30%;
+  width: 20%;
+  box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
+  color: black;
+  background-color: white;
+  border-radius: 5%;
+  position: relative;
+  left: 61%;
+  top: -151%;
+}
+
+.box7 header{
+  height: 70px;
+  background-color: yellow;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.box7 a{
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
+  position: relative;
+  left: 40%;
+  top: 20%;
+}
+
+.box7 a:hover{
+border-bottom: 1px solid white;
+}
+
+.box7 .pa{
+  font-size: 15px;
+  color: black;
+  position: relative;
+  left: 30%;
+  top: 5px;
 }
 
 
 .clinlogo{
-  height: 150px;
-  width: 10%;
+  height: 100px;
+  width: 8%;
   border-radius: 100px;
   position: relative;
-  left: 45%;
-  top: 30px;
+  left: 30%;
+  top: 15px;
 
+}
+
+.cliniclogo h2{
+  font-size: 40px;
+  position: relative;
+  left: 39%;
+  top: -90px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.modal h1{
+  color: black;
+  font-size: 20px;
+}
+
+.modal.active {
+  display: block;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.modal .stem-level {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  width: 50px;
+}
+
+
+.modal .abm-level {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  width: 50px;
+}
+
+
+.modal .humss-level {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+  border-radius: 5px;
+  width: 50px;
+}
+
+
+.modal .he-level {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: pink;
+  border-radius: 5px;
+  width: 50px;
+}
+
+
+.modal .ict-level {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: orange;
+  border-radius: 5px;
+  width: 50px;
+}
+
+
+.modal .gas-level {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: yellow;
+  border-radius: 5px;
+  width: 50px;
+}
+
+
+.modal .pa-level {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: yellow;
+  border-radius: 5px;
+  width: 50px;
+}
+
+.modal a:hover {
+  background-color: maroon;
 }
 
 /* Style for notification box */

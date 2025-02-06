@@ -878,109 +878,64 @@ background-color: #555; /* Scrollbar color on hover */
   width: 10%;
 }
 
-.box{
-    height: 50%;
-    width: 20%;
-    box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
-    color: black;
-    background-color: #560007;
-    border-radius: 5%;
+.card-student{
+    width: 25%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
-    left: 25%;
-    top: 10%;
+    left: 6%;
 }
 
-.box h1{
-    font-size: 20px;
-    color: white;
+.card-professor{
+    width: 25%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
-    left: 20%;
-    top: 20%;
+    left: 36%;
+    top: -20%;
 }
 
-.box footer{
-    background-color: #560007;
-    border-top: 5px solid white;
+.card-employee{
+    width: 25%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
-    top: 40%;
+    left: 66%;
+    top: -40%;
 }
 
-.box a{
-    font-size: 20px;
-    color: white;
+.title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.progress-bar {
+    height: 8px;
+    border-radius: 4px;
+    background: #e0e0e0;
+    margin-top: 10px;
     position: relative;
-    left: 30%;
-    top: 10px;
 }
-
-.box a:hover{
-  color: black;
+.progress {
+    height: 100%;
+    border-radius: 4px;
 }
-
-#data1{
-  font-size: 100px;
-  position: relative;
-  left: 33%;
-  top: 30%;
-}
-
-.box2{
-    height: 50%;
-    width: 20%;
-    box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
-    color: black;
-    background-color: #005a8e;
-    border-radius: 5%;
-    position: relative;
-    left: 55%;
-    top: -42%;
-}
-
-.box2 h1{
-    font-size: 20px;
-    color: white;
-    position: relative;
-    left: 37%;
-    top: 20%;
-}
-
-.box2 footer{
-    background-color: #005a8e;
-    border-top: 5px solid white;
-    position: relative;
-    top: 40%;
-}
-
-.box2 a{
-    font-size: 20px;
-    color: white;
-    position: relative;
-    left: 30%;
-    top: 10px;
-}
-
-.box2 a:hover{
-  color: black;
-}
-
-
-#data2{
-  font-size: 100px;
-  position: relative;
-  left: 33%;
-  top: 30%;
-}
-
-
-.clinlogo{
-  height: 150px;
-  width: 10%;
-  border-radius: 100px;
-  position: relative;
-  left: 45%;
-  top: 30px;
-
-}
+.card-student .progress { background: green; width: 74%; }
+.card-professor .progress { background: red; width: 70%; }
+.card-employee .progress { background: blue; width: 25%; }
 
 /* Style for notification box */
 .notification-box {

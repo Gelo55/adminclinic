@@ -878,109 +878,130 @@ background-color: #555; /* Scrollbar color on hover */
   width: 10%;
 }
 
+
+table #pututoy{
+  background-color: pink;
+  color: blue;
+}
+
 .box{
-    height: 50%;
-    width: 20%;
+    height: 35%;
+    width: 25%;
     box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
     color: black;
-    background-color: #560007;
+    background-color: snow;
     border-radius: 5%;
     position: relative;
-    left: 25%;
-    top: 10%;
+    left: 8%;
+    top: 20%;
+}
+
+.box header{
+    background-color: black;
+    height: 25%;
+    width: 100%;
+}
+
+.box header i{
+    font-size: 25px;
+    color: white;
+    position: relative;
+    top: -40%;
+    left: 5%;
+}
+
+.box li{
+    font-size: 20px;
+    list-style-type: circle;
 }
 
 .box h1{
     font-size: 20px;
     color: white;
     position: relative;
-    left: 20%;
-    top: 20%;
+    left: 13%;
+    top: 30%;
 }
 
-.box footer{
-    background-color: #560007;
-    border-top: 5px solid white;
-    position: relative;
-    top: 40%;
-}
-
-.box a{
-    font-size: 20px;
-    color: white;
-    position: relative;
-    left: 30%;
-    top: 10px;
-}
-
-.box a:hover{
-  color: black;
-}
-
-#data1{
-  font-size: 100px;
-  position: relative;
-  left: 33%;
-  top: 30%;
-}
 
 .box2{
-    height: 50%;
-    width: 20%;
+    height: 35%;
+    width: 25%;
     box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
     color: black;
-    background-color: #005a8e;
+    background-color: snow;
     border-radius: 5%;
     position: relative;
-    left: 55%;
-    top: -42%;
+    left: 38%;
+    top: -17%;
+}
+
+.box2 header{
+    background-color: black;
+    height: 25%;
+    width: 100%;
+}
+
+.box2 header i{
+    font-size: 25px;
+    color: white;
+    position: relative;
+    top: -40%;
+    left: 5%;
+}
+
+.box2 li{
+    font-size: 20px;
+    list-style-type: circle;
 }
 
 .box2 h1{
     font-size: 20px;
     color: white;
     position: relative;
-    left: 37%;
-    top: 20%;
+    left: 13%;
+    top: 30%;
 }
 
-.box2 footer{
-    background-color: #005a8e;
-    border-top: 5px solid white;
+.box3{
+    height: 35%;
+    width: 25%;
+    box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
+    color: black;
+    background-color: snow;
+    border-radius: 5%;
     position: relative;
-    top: 40%;
+    left: 68%;
+    top: -54%;
 }
 
-.box2 a{
+.box3 header{
+    background-color: black;
+    height: 25%;
+    width: 100%;
+}
+
+.box3 header i{
+    font-size: 25px;
+    color: white;
+    position: relative;
+    top: -40%;
+    left: 5%;
+}
+
+.box3 li{
+    font-size: 20px;
+    list-style-type: circle;
+}
+
+.box3 h1{
     font-size: 20px;
     color: white;
     position: relative;
-    left: 30%;
-    top: 10px;
+    left: 13%;
+    top: 30%;
 }
 
-.box2 a:hover{
-  color: black;
-}
-
-
-#data2{
-  font-size: 100px;
-  position: relative;
-  left: 33%;
-  top: 30%;
-}
-
-
-.clinlogo{
-  height: 150px;
-  width: 10%;
-  border-radius: 100px;
-  position: relative;
-  left: 45%;
-  top: 30px;
-
-}
 
 /* Style for notification box */
 .notification-box {

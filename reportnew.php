@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>Clinic Management System</title>
-    <link rel="stylesheet" href="assets/css/studoption.css">
+    <link rel="stylesheet" href="assets/css/reportnew.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
@@ -24,7 +24,7 @@
      <div class="container">
     <div class="head-title">
 				<div class="left">
-					<h1>Student Data</h1>
+					<h1>Report</h1>
 					
 				</div>
     </div> 
@@ -39,21 +39,30 @@
 <!-- frame -->
 <div class= "frame">
 
-<div class="cliniclogo">
-  <img src="assets/images/clinlogo.jpg" alt="" class="clinlogo">
-</div>
-
 <div class="box">
-    <h1>Senior High School</h1>
-    <span><i class="bx bx-user" id="data1"></i></span>
-    <footer><a href="shsdept.php">Click to View</a></footer>
+  <header><a href=""><h1>Inventory Report</h1></a>
+  <span><i class="bx bx-edit"></i></span></header>
+    <ul>
+      <li><p>Report for the status of inventory <br> if it is out of stock or have a issues <br> in medicine or in equipment</p></li>
+    </ul>
 </div>
 
 
 <div class="box2">
-    <h1>College</h1>
-    <span><i class="bx bx-user" id="data2"></i></span>
-    <footer><a href="college.php">Click to View</a></footer>
+  <header><a href=""><h1>Reminder</h1></a>
+  <span><i class="bx bx-bell"></i></span></header>
+    <ul>
+      <li><p>Reminder for further Announcement, <br> change for medical schedule and <br> upcoming task</p></li>
+    </ul>
+</div>
+
+
+<div class="box3">
+  <header><a href=""><h1>Emergency Report</h1></a>
+  <span><i class="bx bx-message-alt-add"></i></span></header>
+    <ul>
+      <li><p>Emergency Report for any problem <br> in Clinic and this report is for the <br> admit students, professor or employee that have serious disease</p></li>
+    </ul>
 </div>
     
     </div>

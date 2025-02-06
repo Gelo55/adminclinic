@@ -798,7 +798,7 @@ background-color: #555; /* Scrollbar color on hover */
     gap: 16px; 
     flex-wrap: wrap;
     padding: 20px; 
-    height: 40px;
+    height: 60px;
 }
 
 /* Left Section */
@@ -822,38 +822,11 @@ background-color: #555; /* Scrollbar color on hover */
 }
 
 /* Breadcrumb */
-.container .head-title .left .breadcrumb {
-    display: flex;
-    align-items: center;
-    gap: 8px; 
-    flex-wrap: wrap;
-}
-
-.container .head-title .left .breadcrumb li {
-    color: var(--blue);
-    list-style: none;
+.container .head-title .left .breadcrumb h1{
+    font-size: 15px;
     position: relative;
-    left: -10%;
-    top: -35px;
-    /* Removed negative positioning */
+    top: -30px;
 }
-
-.container .head-title .left .breadcrumb li a {
-    color: var(--dark-grey);
-    pointer-events: none;
-    background-color: white;
-    padding: 4px 8px;
-    border-radius: 4px;
-    text-decoration: none;
-}
-
-.container .head-title .left .breadcrumb li a.active {
-    color: blue;
-    pointer-events: unset;
-    background-color: #e0e0e0; 
-}
-/* Breadcrumb */
-
 
 
 
@@ -879,105 +852,93 @@ background-color: #555; /* Scrollbar color on hover */
 }
 
 .box{
-    height: 50%;
-    width: 20%;
+    height: 20%;
+    width: 25%;
     box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
     color: black;
-    background-color: #560007;
+    background-color: white;
     border-radius: 5%;
     position: relative;
-    left: 25%;
+    left: 20%;
     top: 10%;
 }
 
 .box h1{
-    font-size: 20px;
-    color: white;
+    font-size: 35px;
+    color: black;
     position: relative;
-    left: 20%;
-    top: 20%;
+    left: 5%;
+    top: 25%;
 }
 
 .box footer{
-    background-color: #560007;
-    border-top: 5px solid white;
+    background-color: white;
+    border-top: 5px solid maroon;
     position: relative;
-    top: 40%;
+    top: -15%;
+    height: 5%;
 }
 
-.box a{
-    font-size: 20px;
-    color: white;
+#g11{
+    font-size: 35px;
+    text-decoration: none;
     position: relative;
-    left: 30%;
-    top: 10px;
+    left: 85%;
+    top: -30px;
 }
 
-.box a:hover{
-  color: black;
+#g11:hover{
+    color: #0056b3;
 }
 
-#data1{
-  font-size: 100px;
-  position: relative;
-  left: 33%;
-  top: 30%;
-}
 
 .box2{
-    height: 50%;
-    width: 20%;
-    box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
-    color: black;
-    background-color: #005a8e;
-    border-radius: 5%;
-    position: relative;
-    left: 55%;
-    top: -42%;
+  height: 20%;
+  width: 25%;
+  box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
+  color: black;
+  background-color: white;
+  border-radius: 5%;
+  position: relative;
+  left: 50%;
+  top: -14%;
 }
 
 .box2 h1{
-    font-size: 20px;
-    color: white;
-    position: relative;
-    left: 37%;
-    top: 20%;
+  font-size: 35px;
+  color: black;
+  position: relative;
+  left: 5%;
+  top: 25%;
 }
 
 .box2 footer{
-    background-color: #005a8e;
-    border-top: 5px solid white;
-    position: relative;
-    top: 40%;
-}
-
-.box2 a{
-    font-size: 20px;
-    color: white;
-    position: relative;
-    left: 30%;
-    top: 10px;
-}
-
-.box2 a:hover{
-  color: black;
-}
-
-
-#data2{
-  font-size: 100px;
+  background-color: white;
+  border-top: 5px solid maroon;
   position: relative;
-  left: 33%;
-  top: 30%;
+  top: -15%;
+  height: 5%;
+}
+
+#g12{
+  font-size: 35px;
+  text-decoration: none;
+  position: relative;
+  left: 85%;
+  top: -30px;
+}
+
+#g12:hover{
+  color: #0056b3;
 }
 
 
 .clinlogo{
-  height: 150px;
-  width: 10%;
+  height: 180px;
+  width: 15%;
   border-radius: 100px;
   position: relative;
-  left: 45%;
+  left: 40%;
   top: 30px;
 
 }

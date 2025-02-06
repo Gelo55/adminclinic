@@ -883,7 +883,7 @@ background-color: #555; /* Scrollbar color on hover */
     width: 20%;
     box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
     color: black;
-    background-color: #560007;
+    background-color: #005a8e;
     border-radius: 5%;
     position: relative;
     left: 25%;
@@ -894,12 +894,12 @@ background-color: #555; /* Scrollbar color on hover */
     font-size: 20px;
     color: white;
     position: relative;
-    left: 20%;
+    left: 5%;
     top: 20%;
 }
 
 .box footer{
-    background-color: #560007;
+    background-color:  #005a8e;
     border-top: 5px solid white;
     position: relative;
     top: 40%;
@@ -922,6 +922,7 @@ background-color: #555; /* Scrollbar color on hover */
   position: relative;
   left: 33%;
   top: 30%;
+  color: white;
 }
 
 .box2{
@@ -940,7 +941,7 @@ background-color: #555; /* Scrollbar color on hover */
     font-size: 20px;
     color: white;
     position: relative;
-    left: 37%;
+    left: 25%;
     top: 20%;
 }
 
@@ -969,6 +970,7 @@ background-color: #555; /* Scrollbar color on hover */
   position: relative;
   left: 33%;
   top: 30%;
+  color: white;
 }
 
 
