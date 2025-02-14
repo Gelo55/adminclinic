@@ -861,18 +861,22 @@ background-color: #555; /* Scrollbar color on hover */
 .container{
  height: 100%;
  width: 100%;
+ overflow: hidden;
 }
 
 /* --FRAME -- */
 .frame {
   background-color: rgba(168, 168, 168, 0.2); 
   height: 90vh;
-  width: 100%;
+  width: 100%; /* Adjust width to be responsive */
+  max-width: 1500px; /* Limit maximum width to 1500px */
+  margin: 0 auto; /* Center frame within the container */
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px; 
   box-sizing: border-box; 
   transition: padding 0.3s ease; 
 }
+
 .frame a{
   text-decoration: none;
   color: black;
@@ -880,23 +884,25 @@ background-color: #555; /* Scrollbar color on hover */
 }
 
 .form-container {
-  background-color: #0056b3;
-  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.832);
+  color: white;
   width: 700px;
   margin: 0;
-  height: 70%;
+  height: 90%;
   border-radius: 10px;
-  margin-left: 0;
+  padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   position: relative;
   left: 25%;
-  top: 10%;
+  top: 3%;
 }
 .form-step {
   display: none;
 }
 .form-step.active {
   display: block;
+  background-color: black;
+  color: white;
 }
 .form-group {
   display: flex;
@@ -906,7 +912,6 @@ background-color: #555; /* Scrollbar color on hover */
 }
 .form-group label {
   flex: 1;
-  margin-right: 10px;
 }
 .form-group input {
   max-width: 25%;
@@ -917,12 +922,14 @@ background-color: #555; /* Scrollbar color on hover */
   border-radius: 5px;
 }
 .btn-group {
+  font-size: 20%;
+  height: 80%;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
   position: relative;
-  left: 84%;
-  top: -170px;
+  left: 88%;
+  top: -208px;
 }
 
 .btn-group2{
@@ -932,7 +939,7 @@ background-color: #555; /* Scrollbar color on hover */
   position: relative;
   top: 100%;
 }
-button {
+#btnfirst {
   padding: 10px 15px;
   border: none;
   background: #007bff;
@@ -940,17 +947,10 @@ button {
   cursor: pointer;
   border-radius: 5px;
 }
-button:hover {
-  background: #0056b3;
+#btnfirst:hover {
+  background: rgba(128, 128, 128, 0.614);
 }
 
-#step1{
-background-color: #0056b3;
-position: relative;
-top: -25px;
-height: 60px;
-width: 100%;
-}
 
 #step2{
   background-color: #0056b3;
@@ -958,6 +958,13 @@ width: 100%;
 
 .student-title{
   position: relative;
+  left: 5%;
+}
+
+#important{
+  font-size: 25px;
+  position: relative;
+  top: 100px;
   left: 5%;
 }
 
@@ -1011,97 +1018,123 @@ width: 100%;
 .label-sec{
   position: relative;
   left: 36%;
-  top: -83px;
+  top: 112px;
 }
 
 #sec{
   position: relative;
-  right: 37%;
-  top: -61px;
+  right: 49.5%;
+  top: 135px;
 }
 
 .label-course{
   position: relative;
   left: 66%;
-  top: -127px;
+  top: 27px;
 }
 
 #course{
   position: relative;
-  right: 7%;
-  top: -104px;
+  right: 20%;
+  top: 49px;
 }
 
 .label-year{
   position: relative;
-  top: -79px;
-  left: 6%;
+  top: 69px;
+  left: 5.5%;
 }
 
 #year{
   position: relative;
-  right: 67%;
-  top: -58px;
+  right: 78%;
+  top: 92px;
 }
 
 .label-age{
   position: relative;
   left: 36%;
-  top: -122px;
+  top: -260px;
 }
 
 #age{
   position: relative;
   right: 37%;
-  top: -101px;
+  top: -238px;
 }
 
 .label-address{
   position: relative;
-  top: -164px;
+  top: -304px;
   left: 66%;
 }
 
 #address{
   position: relative;
   right: 7%;
-  top: -144px;
+  top: -281px;
 }
 
 .label-gender{
   position: relative;
-  top: -113px;
-  left: 6%;
+  top: -8px;
+  left: 66%;
 }
 
 #gender{
   position: relative;
-  right: 67%;
-  top: -91px;
+  right: 20%;
+  top: 13.5px;
 }
 
 .label-contact{
   position: relative;
-  left: 36%;
-  top: -156px;
+  left: 6%;
+  top: -298px;
 }
 
 #contact{
   position: relative;
-  right: 37%;
-  top: -134px;
+  right: 67%;
+  top: -278px;
 }
 
 .label-parent{
   position: relative;
-  left: 66%;
-  top: -200px;
+  left: 36%;
+  top: -343px;
 }
 
 #parent{
   position: relative;
-  right: 7%;
-  top: -177px;
+  right: 37%;
+  top: -321px;
+}
+
+
+.label-disability{
+  position: relative;
+  left: 6%;
+  top: -138px;
+}
+
+#disability{
+  position: relative;
+  right: 73.5%;
+  top: -115px;
+}
+
+
+.label-illness{
+  position: relative;
+  left: 36%;
+  top: -181px;
+}
+
+#illness{
+  position: relative;
+  right: 50.5%;
+  top: -158px;
 }
 
 /* Style for notification box */

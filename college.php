@@ -127,8 +127,8 @@
         <h1>Choose Year Level - BSIT</h1>
         <a href="grade11_stem.php" class="bsit-level">1st Year</a>
         <a href="grade12_stem.php" class="bsit-level">2nd Yeaar</a>
-        <a href="grade12_stem.php" class="bsit-level">3rd Yeaar</a>
-        <a href="grade12_stem.php" class="bsit-level">4th Yeaar</a>
+        <a href="itmajor.php" class="bsit-level">3rd Yeaar</a>
+        <a href="itmajor.php" class="bsit-level">4th Yeaar</a>
     </div>
 
     <div id="modal-bshm" class="modal">
@@ -173,10 +173,10 @@
 
     <div id="modal-bsba" class="modal">
         <h1>Choose Year Level - BSBA</h1>
-        <a href="grade11_stem.php" class="bsba-level">1st Year</a>
-        <a href="grade12_stem.php" class="bsba-level">2nd Yeaar</a>
-        <a href="grade12_stem.php" class="bsba-level">3rd Yeaar</a>
-        <a href="grade12_stem.php" class="bsba-level">4th Yeaar</a>
+        <a href="majorbsba.php" class="bsba-level">1st Year</a>
+        <a href="majorbsba.php" class="bsba-level">2nd Yeaar</a>
+        <a href="majorbsba.php" class="bsba-level">3rd Yeaar</a>
+        <a href="majorbsba.php" class="bsba-level">4th Yeaar</a>
     </div>
 
     <div id="modal-blis" class="modal">
@@ -237,10 +237,10 @@
 
     <div id="modal-bsed" class="modal">
         <h1>Choose Year Level - BSED</h1>
-        <a href="grade11_stem.php" class="bsed-level">1st Year</a>
-        <a href="grade12_stem.php" class="bsed-level">2nd Yeaar</a>
-        <a href="grade12_stem.php" class="bsed-level">3rd Yeaar</a>
-        <a href="grade12_stem.php" class="bsed-level">4th Yeaar</a>
+        <a href="majorbsed.php" class="bsed-level">1st Year</a>
+        <a href="majorbsed.php" class="bsed-level">2nd Yeaar</a>
+        <a href="majorbsed.php" class="bsed-level">3rd Yeaar</a>
+        <a href="majorbsed.php" class="bsed-level">4th Yeaar</a>
     </div>
 
 

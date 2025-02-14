@@ -16,8 +16,6 @@
 <div id="uppernav" >
   <div class="upnav">
   <button class="openbtn" onclick="toggleNav()">☰</button>
-
-
 </div>
 <!-- SIDEBAR -->
 

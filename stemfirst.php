@@ -1,3 +1,45 @@
+<?php
+include 'database.php';
+
+if (!$con) {
+    die("Database connection failed: " . mysqli_connect_error());
+}
+
+if (isset($_POST['submit'])) {
+    $firstname = $_POST['firstname'];
+    $lastname = $_POST['lastname'];
+    $middlename = $_POST['middlename'];
+    $student_number = $_POST['student_number'];
+    $course = $_POST['course'];
+    $year_level = $_POST['year_level'];
+    $section = $_POST['section'];
+    $age = (int)$_POST['age'];
+    $gender = $_POST['gender'];
+    $address = $_POST['address'];
+    $contact_number = $_POST['contact_number']; // Store as string
+    $parent_contact = $_POST['parent_contact']; // Store as string
+    $disability_status = $_POST['disability_status'];
+    $illness = $_POST['illness'];
+
+    $sql = "INSERT INTO student_db (firstname, lastname, middlename, student_number, section_id, age, gender, address, contact_number, parent_contact, disability_status, illness) 
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+    $stmt = $con->prepare($sql);
+    if ($stmt === false) {
+        die("Error preparing statement: " . $con->error);
+    }
+
+    $stmt->bind_param("ssssisssssss", $firstname, $lastname, $middlename, $student_number, $section, $age, $gender, $address, $contact_number, $parent_contact, $disability_status, $illness);
+
+    if (!$stmt->execute()) {
+        die("Error executing query: " . $stmt->error);
+    } else {
+        echo "Record added successfully!";
+    }
+
+    $stmt->close();
+}
+?>
 
 
 <!DOCTYPE html>
@@ -7,7 +49,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>Clinic Management System</title>
-    <link rel="stylesheet" href="assets/css/firstyearstem.css">
+    <link rel="stylesheet" href="assets/css/stemyearfirst.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
@@ -42,78 +84,108 @@
 <div class= "frame">
 
 <div class="form-container">
-        <form id="multiStepForm">
+        <form method="POST">
             <!-- Step 1: Student Information -->
-            <div class="form-step active" id="step1">
                 <h2 class="student-title">Student Information</h2>
                 <div class="form-group">
                     <label class="label-fname">First Name</label>
-                    <input type="text" required id="fname">
+                    <input type="text" placeholder="Enter Your First Name" name="firstname" autocomplete="off" id="fname">
                 </div>
                 <div class="form-group">
                     <label class="label-lname">Last Name</label>
-                    <input type="text" required id="lname">
+                    <input type="text" placeholder="Enter Your Last Name" name="lastname" autocomplete="off" id="lname">
                 </div>
                 <div class="form-group">
                     <label class="label-mname">Middle Name</label>
-                    <input type="text" required id="mname">
+                    <input type="text" placeholder="Enter Your Middle Name" name="middlename" autocomplete="off" id="mname">
                 </div>
                 <div class="form-group">
-                    <label class="label-stid">Student ID</label>
-                    <input type="text" required id="stid">
+                    <label class="label-stid">Student Number</label>
+                    <input type="text" placeholder="Enter Your Student Number" name="student_number" autocomplete="off" id="stid">
                 </div>
+
+                    <h1 id="important">Important Information</h1>
+
                 <div class="form-group">
                     <label class="label-sec">Section</label>
-                    <input type="text" required id="sec">
-                </div>
-                <div class="form-group">
-                    <label class="label-course">Course</label>
-                    <input type="text" required id="course">
-                </div>
-                <div class="form-group">
+                  <select name="section" id="sec" required>
+                    <option value="">select section</option>
+                    <option value="001">001</option>
+                    <option value="002">002</option>
+                    <option value="003">003</option>
+                    <option value="004">004</option>
+                    <option value="005">005</option>
+                  </select>
+                  </div>
+
+                  <div class="form-group">
                     <label class="label-year">Year Level</label>
-                    <input type="number" required id="year">
-                </div>
+                  <select name="year_level" id="year" required>
+                    <option value="">select year level</option>
+                    <option value="grade 11">grade 11</option>
+                    <option value="grade 12">gade 12</option>
+                  </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="label-course">Course</label>
+                  <select name="course" id="course" required>
+                    <option value="">select course</option>
+                    <option value="bsit">BSIT</option>
+                    <option value="bscrim">BSCRIM</option>
+                  </select>
+                    </div>
+
                 <div class="form-group">
                     <label class="label-age">Age</label>
-                    <input type="number" required id="age">
+                    <input type="number" placeholder="Enter Your Age" name="age" autocomplete="off" id="age">
                 </div>
                 <div class="form-group">
                     <label class="label-address">Address</label>
-                    <input type="text" required id="address">
+                    <input type="text" placeholder="Enter Your Address" name="address" autocomplete="off" id="address">
                 </div>
                 <div class="form-group">
                     <label class="label-gender">Gender</label>
-                    <input type="text" required id="gender">
+                  <select name="gender" id="gender">
+                    <option value="">select gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                 </select>
                 </div>
+
+            
                 <div class="form-group">
                     <label class="label-contact">Contact Number</label>
-                    <input type="text" required id="contact">
+                    <input type="text" placeholder="Enter Your Contact Number" name="contact_number" autocomplete="off" id="contact">
                 </div>
                 <div class="form-group">
                     <label class="label-parent">Parent's Contact Number</label>
-                    <input type="text" required id="parent">
+                    <input type="text" placeholder="Enter Your Parent's Contact Number" name="parent_contact" autocomplete="off" id="parent">
                 </div>
-                <div class="btn-group">
-                    <button type="button" onclick="nextStep(2)">Next</button>
-                </div>
-            </div>
 
-            <!-- Step 2: Questionnaire -->
-            <div class="form-step" id="step2">
-                <h2>Questionnaire</h2>
-                <p>Do you agree with the terms and conditions?</p>
-                <label>
-                    <input type="checkbox" name="agree" value="agree"> Agree
-                </label>
-                <label>
-                    <input type="checkbox" name="disagree" value="disagree"> Disagree
-                </label>
-                <div class="btn-group2">
-                    <button type="button" onclick="prevStep(1)">Back</button>
-                    <button type="submit">Submit</button>
+                <div class="form-group">
+                    <label class="label-disability">Disability Status</label>
+                   <select name="disability_status" id="disability">
+                    <option value="">select disability status</option>
+                    <option value="normal">Normal</option>
+                    <option value="pwd">PWD</option>
+                   </select>
                 </div>
-            </div>
+
+                <div class="form-group">
+                    <label class="label-illness">illness</label>
+                   <select name="illness" id="illness">
+                    <option value="">select illness</option>
+                    <option value="asthma">asthma</option>
+                    <option value="cough">cough</option>
+                    <option value="flu">flu</option>
+                   </select>
+                </div>
+
+                <div class="btn-group">
+                    <button type="submit" id="btnfirst" name="submit">submit</button>
+                </div>
+           
         </form>
     </div>
 
@@ -170,16 +242,36 @@ for (i = 0; i < dropdown.length; i++) {
 });
 </script>
 
+
+
 <script>
-        function nextStep(step) {
-            document.getElementById('step1').classList.remove('active');
-            document.getElementById('step2').classList.add('active');
-        }
-        function prevStep(step) {
-            document.getElementById('step2').classList.remove('active');
-            document.getElementById('step1').classList.add('active');
-        }
-    </script>
+    $(document).ready(function () {
+    $('#course').change(function () {
+        var course_id = $(this).val();
+        $.ajax({
+            url: "fetch_year_levels.php",
+            method: "POST",
+            data: { course_id: course_id },
+            success: function (data) {
+                $('#year').html(data);
+                $('#sec').html('<option value="">Select Year Level First</option>'); // Reset Section dropdown
+            }
+        });
+    });
+
+    $('#year').change(function () {
+        var year_id = $(this).val();
+        $.ajax({
+            url: "fetch_sections.php",
+            method: "POST",
+            data: { year_id: year_id },
+            success: function (data) {
+                $('#sec').html(data);
+            }
+        });
+    });
+});
+</script>
 
 </body>
 </html>
