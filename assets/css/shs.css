@@ -6,8 +6,10 @@ body{
     box-sizing: border-box;
 }
 
+
+
 .sidenav{
-  height: 95vh;
+  height: 100%;
   width: 280px;
   position: fixed;
   top: 0;
@@ -42,13 +44,14 @@ body{
 }
 
 .sidenav .nav-link .bell{
-  margin-top: -38%;
-  margin-left:30%;
+  margin-top: -25%;
+  margin-left: 40%;
+  size: 20px;
 }
 
 .sidenav .nav-link .settings{
-  margin-top: -39%;
-  margin-left: 60%;
+  margin-top: -30%;
+  margin-left: 65%;
   position: relative;
   top: 12px;
 }
@@ -72,13 +75,13 @@ body{
 .admin-profile{
   width: 50%;
   height: 50%;
-  margin-left: -90%;
+  margin-left: -40%;
   margin-top: 30%;
   border-radius: 50%;
 }
 
 .user-profile{
-  margin-left: -55%;
+  margin-left: -10%;
   margin-top: 5%;
   min-height: -50px;
 }
@@ -93,7 +96,7 @@ tr,td{
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   top: -60px;
-  left: 20px;
+  left: 35px;
 }
 
 .user-gmail{
@@ -101,7 +104,7 @@ tr,td{
   font-size: 13px;
   position: relative;
   top: -35px;
-  left: -15px
+  left: 10px
  
 }
 
@@ -117,7 +120,7 @@ tr,td{
 .sidenav .nav-links li{
   position: relative;
   list-style: none;
-  height: 50px;
+  height: 40px;
 }
 .sidenav .nav-links li a{
   height: 100%;
@@ -129,7 +132,7 @@ tr,td{
 }
 
 .sidenav .nav-links li a:hover{
-  background: gray;
+  background-color: gray;
   border-radius: 10px;
 }
 
@@ -138,6 +141,7 @@ tr,td{
   text-align: center;
   font-size: 18px;
   color: white;
+  margin-left: 10%;
 }
 
 .sidenav .nav-links li a .links_name{
@@ -145,7 +149,7 @@ tr,td{
   font-size: 14px;
   font-weight: 400;
   white-space: nowrap;
-  margin-left: -3%;
+  margin-left: -4%;
 }
 
 /* hover effect for links */
@@ -221,7 +225,7 @@ text-align: center;
 font-size: 18px;
 color: white;
 position: relative;
-left: -30px;
+left: -19px;
 }
 
 .dropdownmedical .dropdown-btn .droplinks_name{
@@ -229,7 +233,7 @@ color: white;
 font-size: 14px;
 font-weight: 400;
 white-space: nowrap;
-margin-left: -17%;
+margin-left: -12%;
 }
 
 .dropdownmedical .droplinks_name:hover{
@@ -304,7 +308,7 @@ min-width: 60px;
 text-align: center;
 font-size: 18px;
 color: white;
-margin-left: -3%;
+margin-left: 7%;
 }
 
 .dropdownstudent .dropdown-btn .droplinks_name{
@@ -312,7 +316,7 @@ color: white;
 font-size: 14px;
 font-weight: 400;
 white-space: nowrap;
-margin-left: -4%;
+margin-left: -5%;
 position: relative;
 top: 5%;
 }
@@ -352,7 +356,7 @@ background-color: #A8A8A8;
 float: right;
 padding-right: 8px;
 position: relative;
-left: 17%;
+left: 15%;
 top: 2px;
 }
 
@@ -478,7 +482,7 @@ text-align: center;
 font-size: 18px;
 color: white;
 position: relative;
-left: -30px;
+left: -19px;
 }
 
 .dropdownadmission .dropdown-btn .droplinks_name{
@@ -486,7 +490,7 @@ color: white;
 font-size: 14px;
 font-weight: 400;
 white-space: nowrap;
-margin-left: -17%;
+margin-left: -12%;
 }
 
 .dropdownadmission .droplinks_name:hover{
@@ -562,7 +566,7 @@ text-align: center;
 font-size: 18px;
 color: white;
 position: relative;
-left: -12%;
+left: -7%;
 }
 
 .dropdowninventory .dropdown-btn .droplinks_name{
@@ -570,7 +574,7 @@ color: white;
 font-size: 14px;
 font-weight: 400;
 white-space: nowrap;
-margin-left: -17%;
+margin-left: -12%;
 }
 
 .dropdowninventory .droplinks_name:hover{
@@ -646,7 +650,7 @@ text-align: center;
 font-size: 18px;
 color: white;
 position: relative;
-left: -10%;
+left: -7%;
 }
 
 .dropdownreport .dropdown-btn .droplinks_name{
@@ -654,7 +658,7 @@ color: white;
 font-size: 14px;
 font-weight: 400;
 white-space: nowrap;
-margin-left: -17%;
+margin-left: -12%;
 }
 
 .dropdownreport .droplinks_name:hover{
@@ -812,7 +816,7 @@ background-color: #555; /* Scrollbar color on hover */
     /* Center align on smaller screens */
     text-align: left;
     position: relative;
-    left: 10%;
+    left: -60%;
     top: -15px;
 }
 
@@ -850,6 +854,30 @@ background-color: #555; /* Scrollbar color on hover */
 /* Breadcrumb */
 
 
+.container{
+ height: 100%;
+ width: 100%;
+}
+
+/* --FRAME -- */
+.frame {
+  background-color: rgba(168, 168, 168, 0.2); 
+  height: 95vh;
+  width: 117%;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; 
+  transition: padding 0.3s ease; 
+  margin-top: 1%;
+  position: relative;
+  right: 8%;
+  overflow: hidden;
+}
+.frame a{
+  text-decoration: none;
+  color: black;
+  width: 10%;
+}
+
 
 
 .container{
@@ -860,12 +888,14 @@ background-color: #555; /* Scrollbar color on hover */
 /* --FRAME -- */
 .frame {
   background-color: rgba(168, 168, 168, 0.2); 
-  height: 1100px;
-  width: 100%;
+  height: 90vh;
+  width: 117%;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px; 
   box-sizing: border-box; 
   transition: padding 0.3s ease; 
+  margin-top: 1%;
+  position: relative;
+  right: 8%;
 }
 .frame a{
   text-decoration: none;
@@ -873,347 +903,440 @@ background-color: #555; /* Scrollbar color on hover */
   width: 10%;
 }
 
-.card{
-  height: 15%;
+.box{
+    height: 30%;
+    width: 20%;
+    box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
+    color: black;
+    background-color: white;
+    border-radius: 5%;
+    position: relative;
+    left: 5%;
+    top: 3%;
+}
+
+.box header{
+  height: 70px;
+  background-color: limegreen;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.box a{
+    font-size: 30px;
+    font-weight: 800;
+    color: black;
+    position: relative;
+    left: 30%;
+    top: 20%;
+}
+
+.box a:hover{
+  border-bottom: 1px solid white;
+}
+
+.box .stem{
+    font-size: 20px;
+    color: black;
+    position: relative;
+    left: 18%;
+    top: 20px;
+}
+
+
+.box2{
+  height: 30%;
   width: 20%;
   box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
+  color: black;
   background-color: white;
-  color: white;
   border-radius: 5%;
   position: relative;
-  left: 10%;
+  left: 27%;
+  top: -27.5%;
 }
 
-.card-header{
-  background-color: black;
-  color: white;
-  height: 15%;
+.box2 header{
+  height: 70px;
+  background-color: red;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 
-.card-header h1{
+.box2 a{
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
+  position: relative;
+  left: 35%;
+  top: 20%;
+}
+
+.box2 a:hover{
+border-bottom: 1px solid white;
+}
+
+.box2 .abm{
   font-size: 20px;
-  color: white;
+  color: black;
+  position: relative;
+  left: 15%;
+  top: 20px;
+}
+
+
+.box3{
+  height: 30%;
+  width: 20%;
+  box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
+  color: black;
+  background-color: white;
+  border-radius: 5%;
+  position: relative;
+  left: 49%;
+  top: -58%;
+}
+
+.box3 header{
+  height: 70px;
+  background-color: blue;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.box3 a{
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
   position: relative;
   left: 30%;
+  top: 20%;
 }
 
-.card-body{
-  background-color: white;
-  position: relative;
-  top: 27%;
-  height: 10%;
+.box3 a:hover{
+border-bottom: 1px solid white;
+}
+
+.box3 .humss{
+  font-size: 20px;
   color: black;
-  border-top: 3px solid black;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-#card1{
   position: relative;
-  left: 35%;
-  top: 15%;
-  color: #007BFF;
+  left: 3%;
+  top: 20px;
 }
 
-#card1:hover{
-  color: #007BFF;
-}
 
-.card i{
-  color: black;
-  font-size: 70px;
-  position: relative;
-  top: 15%;
-
-}
-
-.card2{
-  height: 15%;
+.box4{
+  height: 30%;
   width: 20%;
   box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
+  color: black;
   background-color: white;
-  color: white;
   border-radius: 5%;
   position: relative;
-  left: 55%;
-  top: -16.5%;
+  left: 71%;
+  top: -88.5%;
 }
 
-.card-header2{
-  background-color: black;
-  color: white;
-  height: 15%;
+.box4 header{
+  height: 70px;
+  background-color: pink;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 
-.card-header2 h1{
-  font-size: 20px;
-  color: white;
+.box4 a{
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
   position: relative;
   left: 40%;
+  top: 20%;
 }
 
+.box4 a:hover{
+border-bottom: 1px solid white;
+}
 
-.card-body2{
-  background-color: white;
-  position: relative;
-  top: 27%;
-  height: 10%;
+.box4 .he{
+  font-size: 20px;
   color: black;
-  border-top: 3px solid black;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-#card2{
   position: relative;
-  left: 35%;
-  top: 15%;
-  color: #007BFF;
-}
-
-#card2:hover{
-  color: #007BFF;
-}
-
-.card2 i{
-  color: black;
-  font-size: 70px;
-  position: relative;
-  top: 15%;
-
+  left: 22%;
+  top: 20px;
 }
 
 
-.card3{
-  height: 15%;
+.box5{
+  height: 30%;
   width: 20%;
   box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
+  color: black;
   background-color: white;
-  color: white;
   border-radius: 5%;
   position: relative;
-  left: 32.5%;
-  top: -32.5%;
+  left: 38%;
+  top: -83%;
 }
 
-.card-header3{
-  background-color: black;
-  color: white;
-  height: 15%;
+.box5 header{
+  height: 70px;
+  background-color: orange;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 
-.card-header3 h1{
-  font-size: 20px;
-  color: white;
-  position: relative;
-  left: 25%;
-}
-
-.card-body3{
-  background-color: white;
-  position: relative;
-  top: 27%;
-  height: 10%;
-  color: black;
-  border-top: 3px solid black;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-#card3{
-  position: relative;
-  left: 35%;
-  top: 15%;
-  color: #007BFF;
-}
-
-#card3:hover{
-  color: #007BFF;
-}
-
-.card3 i{
-  color: black;
-  font-size: 70px;
-  position: relative;
-  top: 15%;
-
-}
-
-.table-container {
-  max-width: 1100px;
-  height: 390px;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  border-left: 5px solid black;
-  border-bottom: 5px solid black;
-  position: relative;
-  left: -7%;
-  top: 10%;
-}
-
-
-.clinic-table{
-width: 100%;
-border-collapse: collapse;
-margin-bottom: 50px;
-}
-
-.sched-table, td {
-padding: 12px 15px;
-text-align: left;
-}
-
-.sched-table {
-background-color: #ffffff;
-color: black;
-height: 20px;
-}
-
-.table-body tr:nth-child(even) {
-background-color: #f9f9f9;
-}
-
-.table-body tr:hover {
-background-color: #f1f1f1;
-}
-
-.status {
-padding: 5px 10px;
-border-radius: 4px;
-font-weight: bold;
-}
-
-.status.finished {
-color: #155724;
-background-color: #d4edda;
-}
-
-.status.ongoing {
-color: #856404;
-background-color: #fff3cd;
-}
-
-.status.pending {
-color: #721c24;
-background-color: #f8d7da;
-}
-
-.action-btn {
-background-color: #007BFF;
-color: white;
-border: none;
-padding: 8px 12px;
-cursor: pointer;
-border-radius: 4px;
-transition: background-color 0.3s ease;
-}
-
-.action-btn:hover {
-background-color: #0056b3;
-}
-
-
-.appointment-container {
-  width: 28%;
-  height: 350px;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  border-left: 5px solid black;
-  border-bottom: 5px solid black;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-  left: 50%;
-  top: -70%;
-}
-
-.appointment-container .announce-header{
-  width: 100%;
-  height: 10%;
-}
-
-.appointment-container h2 {
+.box5 a{
   font-size: 30px;
-  font-weight: 50%;
-  margin-bottom: 20pxx;
+  font-weight: 800;
   color: black;
   position: relative;
-  top: -50%;
-  left: 10px;
+  left: 40%;
+  top: 20%;
 }
 
-/* Appointment List Styling */
+.box5 a:hover{
+border-bottom: 1px solid white;
+}
 
-.appointment-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.box5 .ict{
+  font-size: 20px;
+  color: black;
   position: relative;
-  top: -4%;
-}
-
-.appointment-list li {
-  font-size: 18px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  background-color: #fff;
-  border-radius: 8px;
-  margin-bottom: 1px;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.appointment-list li:hover {
-  background-color: #f0f0f0;
-  transform: translateY(-2px);
-}
-
-.time {
-  font-size: 1.2em;
-  color: #555;
-  font-weight: 600;
-}
-
-.details {
-  flex-grow: 1;
-  margin-left: 20px;
-}
-
-.details h3 {
-  margin: 0 0 5px 0;
-  font-weight: 500;
-  color: #333;
-}
-
-.details p {
-  margin: 0;
-  color: #777;
-  font-size: 0.9em;
+  left: 3%;
+  top: 20px;
 }
 
 
-.analytics-container{
-  width: 44%;
-  height: 386px;
+.box6{
+  height: 30%;
+  width: 20%;
+  box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
+  color: black;
   background-color: white;
-  border-left: 5px solid black;
-  border-bottom: 5px solid black;
-  border-radius: 2%;
+  border-radius: 5%;
   position: relative;
-  top: -107.5%;
-  left: 5%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  left: 15%;
+  top: -112.5%;
 }
 
-   /* Style for the chart container */
-   #chart {
-    max-width: 620px;
-    margin: 5px auto;
+.box6 header{
+  height: 70px;
+  background-color: yellow;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.box6 a{
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
+  position: relative;
+  left: 40%;
+  top: 20%;
+}
+
+.box6 a:hover{
+border-bottom: 1px solid white;
+}
+
+.box6 .gas{
+  font-size: 20px;
+  color: black;
+  position: relative;
+  left: 12%;
+  top: 20px;
+}
+
+
+.box7{
+  height: 30%;
+  width: 20%;
+  box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
+  color: black;
+  background-color: white;
+  border-radius: 5%;
+  position: relative;
+  left: 61%;
+  top: -143%;
+}
+
+.box7 header{
+  height: 70px;
+  background-color: yellow;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.box7 a{
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
+  position: relative;
+  left: 40%;
+  top: 20%;
+}
+
+.box7 a:hover{
+border-bottom: 1px solid white;
+}
+
+.box7 .pa{
+  font-size: 20px;
+  color: black;
+  position: relative;
+  left: 23%;
+  top: 20px;
+}
+
+
+.clinlogo{
+  height: 100px;
+  width: 8%;
+  border-radius: 100px;
+  position: relative;
+  left: 30%;
+  top: 35px;
+
+}
+
+.cliniclogo h2{
+  font-size: 40px;
+  position: relative;
+  left: 39%;
+  top: -35px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.modal h1{
+  color: black;
+  font-size: 20px;
+}
+
+.modal.active {
+  display: block;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.modal .stem-level {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  width: 50px;
+}
+
+
+.modal .abm-level {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  width: 50px;
+}
+
+
+.modal .humss-level {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+  border-radius: 5px;
+  width: 50px;
+}
+
+
+.modal .he-level {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: pink;
+  border-radius: 5px;
+  width: 50px;
+}
+
+
+.modal .ict-level {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: orange;
+  border-radius: 5px;
+  width: 50px;
+}
+
+
+.modal .gas-level {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: yellow;
+  border-radius: 5px;
+  width: 50px;
+}
+
+
+.modal .pa-level {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: yellow;
+  border-radius: 5px;
+  width: 50px;
+}
+
+.modal a:hover {
+  background-color: maroon;
 }
 
 /* Style for notification box */

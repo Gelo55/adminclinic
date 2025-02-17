@@ -6,8 +6,9 @@ body{
     box-sizing: border-box;
 }
 
+
 .sidenav{
-  height: 95vh;
+  height: 100%;
   width: 280px;
   position: fixed;
   top: 0;
@@ -42,13 +43,14 @@ body{
 }
 
 .sidenav .nav-link .bell{
-  margin-top: -38%;
-  margin-left:30%;
+  margin-top: -25%;
+  margin-left: 40%;
+  size: 20px;
 }
 
 .sidenav .nav-link .settings{
-  margin-top: -39%;
-  margin-left: 60%;
+  margin-top: -30%;
+  margin-left: 65%;
   position: relative;
   top: 12px;
 }
@@ -72,13 +74,13 @@ body{
 .admin-profile{
   width: 50%;
   height: 50%;
-  margin-left: -90%;
+  margin-left: -40%;
   margin-top: 30%;
   border-radius: 50%;
 }
 
 .user-profile{
-  margin-left: -55%;
+  margin-left: -10%;
   margin-top: 5%;
   min-height: -50px;
 }
@@ -93,7 +95,7 @@ tr,td{
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   top: -60px;
-  left: 20px;
+  left: 35px;
 }
 
 .user-gmail{
@@ -101,7 +103,7 @@ tr,td{
   font-size: 13px;
   position: relative;
   top: -35px;
-  left: -15px
+  left: 10px
  
 }
 
@@ -117,7 +119,7 @@ tr,td{
 .sidenav .nav-links li{
   position: relative;
   list-style: none;
-  height: 50px;
+  height: 40px;
 }
 .sidenav .nav-links li a{
   height: 100%;
@@ -129,7 +131,7 @@ tr,td{
 }
 
 .sidenav .nav-links li a:hover{
-  background: gray;
+  background-color: gray;
   border-radius: 10px;
 }
 
@@ -138,8 +140,7 @@ tr,td{
   text-align: center;
   font-size: 18px;
   color: white;
-  position: relative;
-  left: 5%;
+  margin-left: 10%;
 }
 
 .sidenav .nav-links li a .links_name{
@@ -147,9 +148,7 @@ tr,td{
   font-size: 14px;
   font-weight: 400;
   white-space: nowrap;
-  margin-left: 1%;
-  position: relative;
-  top: 3px;
+  margin-left: -4%;
 }
 
 /* hover effect for links */
@@ -225,7 +224,7 @@ text-align: center;
 font-size: 18px;
 color: white;
 position: relative;
-left: -23px;
+left: -19px;
 }
 
 .dropdownmedical .dropdown-btn .droplinks_name{
@@ -233,7 +232,7 @@ color: white;
 font-size: 14px;
 font-weight: 400;
 white-space: nowrap;
-margin-left: -14%;
+margin-left: -12%;
 }
 
 .dropdownmedical .droplinks_name:hover{
@@ -308,7 +307,7 @@ min-width: 60px;
 text-align: center;
 font-size: 18px;
 color: white;
-margin-left: 2%;
+margin-left: 7%;
 }
 
 .dropdownstudent .dropdown-btn .droplinks_name{
@@ -316,10 +315,9 @@ color: white;
 font-size: 14px;
 font-weight: 400;
 white-space: nowrap;
-margin-left: -4%;
+margin-left: -5%;
 position: relative;
 top: 5%;
-left: -1%;
 }
 
 .dropdownstudent .droplinks_name:hover{
@@ -394,7 +392,7 @@ min-width: 60px;
 text-align: center;
 font-size: 18px;
 color: white;
-margin-left: 3%;
+margin-left: -3%;
 position: relative;
 top: 8px;
 }
@@ -483,7 +481,7 @@ text-align: center;
 font-size: 18px;
 color: white;
 position: relative;
-left: -23px;
+left: -19px;
 }
 
 .dropdownadmission .dropdown-btn .droplinks_name{
@@ -491,7 +489,7 @@ color: white;
 font-size: 14px;
 font-weight: 400;
 white-space: nowrap;
-margin-left: -14%;
+margin-left: -12%;
 }
 
 .dropdownadmission .droplinks_name:hover{
@@ -567,7 +565,7 @@ text-align: center;
 font-size: 18px;
 color: white;
 position: relative;
-left: -10%;
+left: -7%;
 }
 
 .dropdowninventory .dropdown-btn .droplinks_name{
@@ -575,7 +573,7 @@ color: white;
 font-size: 14px;
 font-weight: 400;
 white-space: nowrap;
-margin-left: -14%;
+margin-left: -12%;
 }
 
 .dropdowninventory .droplinks_name:hover{
@@ -651,7 +649,7 @@ text-align: center;
 font-size: 18px;
 color: white;
 position: relative;
-left: -10%;
+left: -7%;
 }
 
 .dropdownreport .dropdown-btn .droplinks_name{
@@ -659,7 +657,7 @@ color: white;
 font-size: 14px;
 font-weight: 400;
 white-space: nowrap;
-margin-left: -14%;
+margin-left: -12%;
 }
 
 .dropdownreport .droplinks_name:hover{
@@ -817,7 +815,7 @@ background-color: #555; /* Scrollbar color on hover */
     /* Center align on smaller screens */
     text-align: left;
     position: relative;
-    left: 10%;
+    left: -60%;
     top: -15px;
 }
 
@@ -855,40 +853,36 @@ background-color: #555; /* Scrollbar color on hover */
 /* Breadcrumb */
 
 
-
-
-
-.container {
-  height: 100%;
-  width: 100%; /* Adjust width to take full available space */
-  margin: 0 auto; /* Center container horizontally */
-  padding: 0; /* Ensure no extra padding */
-  overflow: hidden;
+.container{
+ height: 100%;
+ width: 100%;
 }
 
 /* --FRAME -- */
 .frame {
   background-color: rgba(168, 168, 168, 0.2); 
   height: 90vh;
-  width: 100%; /* Adjust width to be responsive */
-  max-width: 1500px; /* Limit maximum width to 1500px */
-  margin: 0 auto; /* Center frame within the container */
+  width: 117%;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px; 
   box-sizing: border-box; 
   transition: padding 0.3s ease; 
+  margin-top: 1%;
+  position: relative;
+  right: 8%;
+  overflow: hidden;
 }
-
 .frame a{
   text-decoration: none;
   color: black;
   width: 10%;
 }
 
+
 .disease-title{
     font-size: 30px;
     position: relative;
     left: 32%;
+    top: 5%;
 }
 
 .card-student{
@@ -900,7 +894,7 @@ background-color: #555; /* Scrollbar color on hover */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
     left: 20%;
-    top: -1%;
+    top: 9%;
 }
 
 .stud{
@@ -916,7 +910,7 @@ background-color: #555; /* Scrollbar color on hover */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
     left: 41%;
-    top: -23%;
+    top: -15%;
 }
 
 .prof{
@@ -932,7 +926,7 @@ background-color: #555; /* Scrollbar color on hover */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
     left: 62%;
-    top: -45%;
+    top: -39%;
 }
 
 .emp{

@@ -2,17 +2,17 @@
     <ul class="nav-link">
     <li class="bell">
     <a href="#" id="bell-icon" class="active">
-        <i class='bx bx-bell'></i>
+        <i class='fas fa-envelope'></i>
     </a>
     <!-- Notification Box -->
     <div id="notification-box" class="notification-box">
-        <p><i class="bx bx-bell"></i>No new notifications</p>
+        <p><i class="fas fa-bell"></i>No new notifications</p>
         <p class="second-paragraph">When you have notifications,</p> <br> <p class="third-paragraph">they will appear here.</p>
     </div>
 </li>
 <li class="settings">
     <a href="#" id="settings-icon">
-        <i class='bx bx-cog'></i>
+        <i class='fas fa-caret-down'></i>
     </a>
     <!-- Unique Dropdown Menu -->
     <ul id="settings-dropdown-menu" class="settings-dropdown-menu">
@@ -35,12 +35,12 @@
           <ul class="nav-links">
           <li>
             <a href="dash.php">
-              <i class='bx bx-home' ></i>
+              <i class='fas fa-home' ></i>
               <span class="links_name">Home</span>
             </a>
           </li><br>
     <div class="dropdownstudent">
-    <button class="dropdown-btn"> <i class='bx bx-user' ></i>
+    <button class="dropdown-btn"> <i class='fas fa-user' ></i>
       <span class="droplinks_name">Student</span>
       <i class="fa fa-caret-down" id="second"></i>
     </button>
@@ -58,7 +58,7 @@
       <tr>
         <td>
         <div class="dropdownadmission">
-    <button class="dropdown-btn"> <i class='bx bx-add-to-queue' ></i>
+    <button class="dropdown-btn"> <i class='fas fa-notes-medical' ></i>
       <span class="droplinks_name">Admit</span>
       <i class="fa fa-caret-down" id="fourth"></i>
     </button>
@@ -75,7 +75,7 @@
       <tr>
         <td>
     <div class="dropdownmedical">
-    <button class="dropdown-btn"> <i class='bx bx-plus' ></i>
+    <button class="dropdown-btn"> <i class='fas fa-briefcase-medical' ></i>
       <span class="droplinks_name">Medical</span>
       <i class="fa fa-caret-down" id="first"></i>
     </button>
@@ -95,7 +95,7 @@
       <tr>
         <td>
     <div class="dropdowninventory">
-    <button class="dropdown-btn"> <i class='bx bx-capsule' ></i>
+    <button class="dropdown-btn"> <i class='fas fa-tablets' ></i>
       <span class="droplinks_name">inventory</span>
       <i class="fa fa-caret-down" id="fifth"></i>
     </button>
@@ -113,7 +113,7 @@
       <tr>
         <td>
         <div class="dropdownreport">
-    <button class="dropdown-btn"> <i class='bx bx-edit' ></i>
+    <button class="dropdown-btn"> <i class='fas fa-comment-medical' ></i>
       <span class="droplinks_name">Report and Reminder</span>
       <i class="fa fa-caret-down" id="sixth"></i>
     </button>

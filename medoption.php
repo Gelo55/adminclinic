@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Clinic Management System</title>
-    <link rel="stylesheet" href="assets/css/medoption.css">
+    <link rel="stylesheet" href="assets/css/medopt.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
@@ -45,14 +46,14 @@
 
 <div class="box">
     <h1>Senior High School Medical</h1>
-    <span><i class="bx bx-plus-medical" id="data1"></i></span>
+    <span><i class="fas fa-briefcase-medical" id="data1"></i></span>
     <footer><a href="medshs.php">Click to View</a></footer>
 </div>
 
 
 <div class="box2">
     <h1>College Medical</h1>
-    <span><i class="bx bx-plus-medical" id="data2"></i></span>
+    <span><i class="fas fa-briefcase-medical" id="data2"></i></span>
     <footer><a href="medcollege.php">Click to View</a></footer>
 </div>
     

@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Clinic Management System</title>
-    <link rel="stylesheet" href="assets/css/admindash.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
@@ -40,33 +41,40 @@
 
 <div class="card">
   <div class="card-header">
-    <h1>SHS Medical</h1>
+    <h1>Total SHS Medical</h1>
   </div>
-  <span><i class="bx bx-plus-medical"></i></span>
-  <div class="card-body">
-    <a href="#" class="btn btn-primary" id="card1">Click to View</a>
+  <span><i class="fas fa-briefcase-medical"></i></span>
+  <div id="card-body">
   </div>
 </div>
 
 
 <div class="card2">
   <div class="card-header2">
-    <h1>Admit</h1>
+    <h1>Total Admit</h1>
   </div>
-  <span><i class="bx bx-message-square-add"></i></span>
+  <span><i class="fas fa-notes-medical"></i></span>
   <div class="card-body2">
-    <a href="#" class="btn btn-primary" id="card2">Click to View</a>
   </div>
 </div>
 
 
 <div class="card3">
   <div class="card-header3">
-    <h1>College Medical</h1>
+    <h1>Total College Medical</h1>
   </div>
-  <span><i class="bx bx-plus-medical"></i></span>
+  <span><i class="fas fa-briefcase-medical"></i></span>
   <div class="card-body3">
-    <a href="#" class="btn btn-primary" id="card3">Click to View</a>
+  </div>
+</div>
+
+
+<div class="card4">
+  <div class="card-header4">
+    <h1>Total disease</h1>
+  </div>
+  <span><i class="fas fa-notes-medical"></i></span>
+  <div class="card-body4">
   </div>
 </div>
 
@@ -117,39 +125,6 @@
         </table>
     </div>
 
-     <div class="appointment-container">
-      <header class="announce-header"><h2>Announcement</h2></header>
-       <ul class="appointment-list">
-           <li>
-               <div class="time">Today</div>
-               <div class="details">
-                   <h3>Medical is ongoing</h3>
-                   <p>medical is ongoing for educ department</p>
-               </div>
-           </li>
-           <li>
-               <div class="time">8 AM - <br>5 PM</div>
-               <div class="details"> 
-                   <h3>Medical Hours</h3>
-                   <p>Medical will be availlable at 8 am to 5 pm</p>
-               </div>
-           </li>
-           <li>
-               <div class="time">Today</div>
-               <div class="details">
-                   <h3>Inventory Stock</h3>
-                   <p>Stock of medicine was needed</p>
-               </div>
-           </li>
-           <li>
-               <div class="time">Sat and <br> Sun</div>
-               <div class="details">
-                   <h3>Medical will not available</h3>
-                   <p>Medical will not available at weekends</p>
-               </div>
-           </li>
-       </ul>
-      </div>
 
         
   <div class="analytics-container">

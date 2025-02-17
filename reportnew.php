@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Clinic Management System</title>
-    <link rel="stylesheet" href="assets/css/reportnew.css">
+    <link rel="stylesheet" href="assets/css/report.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
@@ -41,7 +42,7 @@
 
 <div class="box">
   <header><a href=""><h1>Inventory Report</h1></a>
-  <span><i class="bx bx-edit"></i></span></header>
+  <span><i class="fas fa-edit"></i></span></header>
     <ul>
       <li><p>Report for the status of inventory <br> if it is out of stock or have a issues <br> in medicine or in equipment</p></li>
     </ul>
@@ -50,7 +51,7 @@
 
 <div class="box2">
   <header><a href=""><h1>Reminder</h1></a>
-  <span><i class="bx bx-bell"></i></span></header>
+  <span><i class="fas fa-bell"></i></span></header>
     <ul>
       <li><p>Reminder for further Announcement, <br> change for medical schedule and <br> upcoming task</p></li>
     </ul>
@@ -59,7 +60,7 @@
 
 <div class="box3">
   <header><a href=""><h1>Emergency Report</h1></a>
-  <span><i class="bx bx-message-alt-add"></i></span></header>
+  <span><i class="fas fa-bullhorn"></i></span></header>
     <ul>
       <li><p>Emergency Report for any problem <br> in Clinic and this report is for the <br> admit students, professor or employee that have serious disease</p></li>
     </ul>

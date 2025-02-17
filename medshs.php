@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Clinic Management System</title>
-    <link rel="stylesheet" href="assets/css/medicalshs.css">
+    <link rel="stylesheet" href="assets/css/medshs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
@@ -16,8 +17,7 @@
 <div id="uppernav" >
   <div class="upnav">
   <button class="openbtn" onclick="toggleNav()">☰</button>
-
-
+</div>
 </div>
 <!-- SIDEBAR -->
 
@@ -25,7 +25,7 @@
      <div class="container">
     <div class="head-title">
 				<div class="left">
-					<h1>Student Data</h1>
+					<h1>Medical Senior High School</h1>
 				</div>
     </div> 
 </div>
@@ -48,49 +48,49 @@
  <div class="box">
         <header><a href="#" data-target="modal-stem">STEM</a></header>
         <h1 class="stem">Science, Technology,  <br> Engineering, and Mathematics</h1>
-        <span><i class="bx bx-plus-medical" id="firsticon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="firsticon"></i></span>
         <h2 class="one">100 Students</h2>
     </div>
 
     <div class="box2">
         <header><a href="#" data-target="modal-abm">ABM</a></header>
         <h1 class="abm">Accountancy, Business <br> and Management</h1>
-        <span><i class="bx bx-plus-medical" id="secondicon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="secondicon"></i></span>
         <h2 class="two">100 Students</h2>
     </div>
 
     <div class="box3">
         <header><a href="#" data-target="modal-humss">HUMSS</a></header>
         <h1 class="humss">Humanities and Social Sciences</h1>
-        <span><i class="bx bx-plus-medical" id="thirdicon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="thirdicon"></i></span>
         <h2 class="three">100 Students</h2>
     </div>
 
     <div class="box4">
         <header><a href="#" data-target="modal-he">HE</a></header>
         <h1 class="he">Home Economics</h1>
-        <span><i class="bx bx-plus-medical" id="fouricon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="fouricon"></i></span>
         <h2 class="four">100 Students</h2>
     </div>
 
     <div class="box5">
         <header><a href="#" data-target="modal-ict">ICT</a></header>
         <h1 class="ict">Information and Communication Technology</h1>
-        <span><i class="bx bx-plus-medical" id="fiveicon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="fiveicon"></i></span>
         <h2 class="five">100 Students</h2>
     </div>
 
     <div class="box6">
         <header><a href="#" data-target="modal-gas">GAS</a></header>
         <h1 class="gas">General Academic Strand</h1>
-        <span><i class="bx bx-plus-medical" id="sixicon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="sixicon"></i></span>
         <h2 class="six">100 Students</h2>
     </div>
 
     <div class="box7">
         <header><a href="#" data-target="modal-pa">PA</a></header>
         <h1 class="pa">Performing Arts</h1>
-        <span><i class="bx bx-plus-medical" id="sevenicon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="sevenicon"></i></span>
         <h2 class="seven">100 Students</h2>
     </div>
 

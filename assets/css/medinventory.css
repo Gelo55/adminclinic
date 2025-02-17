@@ -857,85 +857,117 @@ background-color: #555; /* Scrollbar color on hover */
 
 
 
-.container{
- height: 100%;
- width: 100%;
+
+.container {
+  height: 100%;
+  width: 100%; /* Adjust width to take full available space */
+  margin: 0 auto; /* Center container horizontally */
+  padding: 0; /* Ensure no extra padding */
+  overflow: hidden; /* Prevent horizontal scrolling */
 }
 
 /* --FRAME -- */
 .frame {
   background-color: rgba(168, 168, 168, 0.2); 
-  height: 90vh;
-  width: 100%;
+  height: 150vh;
+  width: 100%; /* Adjust width to be responsive */
+  max-width: 1500px; /* Limit maximum width to 1500px */
+  margin: 0 auto; /* Center frame within the container */
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px; 
   box-sizing: border-box; 
   transition: padding 0.3s ease; 
 }
+
 .frame a{
   text-decoration: none;
   color: black;
   width: 10%;
 }
 
-.card-student{
-    width: 25%;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-    left: 6%;
+
+.medicine-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.card-professor{
-    width: 25%;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-    left: 36%;
-    top: -20%;
+
+.tablemed {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-.card-employee{
-    width: 25%;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-    left: 66%;
-    top: -40%;
+.tablemed, th, td {
+  border: 1px solid #ddd;
+  text-align: left;
 }
 
-.title {
-    font-weight: bold;
-    margin-bottom: 10px;
+th, td {
+  padding: 10px;
 }
-.stats {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
+
+th {
+  background: #007bff;
+  color: white;
 }
-.progress-bar {
-    height: 8px;
-    border-radius: 4px;
-    background: #e0e0e0;
-    margin-top: 10px;
-    position: relative;
+
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
 }
-.progress {
-    height: 100%;
-    border-radius: 4px;
+
+.status.issued {
+  background-color: #28a745;
+  color: white;
 }
-.card-student .progress { background: green; width: 74%; }
-.card-professor .progress { background: red; width: 70%; }
-.card-employee .progress { background: blue; width: 25%; }
+
+.status.returned {
+  background-color: #ffc107;
+  color: black;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.edit {
+  background: #17a2b8;
+  color: white;
+}
+
+button.delete {
+  background: #dc3545;
+  color: white;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+form input, form select, form button {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
 
 /* Style for notification box */
 .notification-box {
@@ -1024,23 +1056,3 @@ background-color: #555; /* Scrollbar color on hover */
   color: #0056b3;
   background-color: #f0f0f0;
 }
-
-@media (max-width: 768px) {
-  .box-info {
-    width: 30%;
-    margin-left: 10%;
-  }
-
-  .appointment-container{
-    width: 30%;
-  }
-}
-
-@media (max-width: 480px) {
-  .box-info {
-    width: 50%;
-    margin-left: 20%;
-  }
-}
-
-
