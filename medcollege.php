@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Clinic Management System</title>
-    <link rel="stylesheet" href="assets/css/medcollege.css">
+    <link rel="stylesheet" href="assets/css/mediccollege.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
@@ -46,21 +47,21 @@
  <div class="box">
         <header><a href="#" data-target="modal-bsit">BSIT</a></header>
         <h1 class="bsit">Bachelor of Science in  <br> Information Technology</h1>
-        <span><i class="bx bx-plus-medical" id="firsticon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="firsticon"></i></span>
         <h2 class="one">100 Students</h2>
     </div>
 
     <div class="box2">
         <header><a href="#" data-target="modal-bscrim">BSCRIM</a></header>
         <h1 class="bscrim">Bachelor of Science in <br> Criminology</h1>
-        <span><i class="bx bx-plus-medical" id="secondicon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="secondicon"></i></span>
         <h2 class="two">100 Students</h2>
     </div>
 
     <div class="box3">
         <header><a href="#" data-target="modal-blis">BLIS</a></header>
         <h1 class="blis">Bachelor of Library <br> Information Science</h1>
-        <span><i class="bx bx-plus-medical" id="thirdicon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="thirdicon"></i></span>
         <h2 class="three">100 Students</h2>
     </div>
 
@@ -68,63 +69,63 @@
     <div class="box4">
         <header><a href="#" data-target="modal-bshm">BSHM</a></header>
         <h1 class="bshm">Bachelor of Science in<br> Hospitality Management</h1>
-        <span><i class="bx bx-plus-medical" id="fouricon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="fouricon"></i></span>
         <h2 class="four">100 Students</h2>
     </div>
 
     <div class="box5">
         <header><a href="#" data-target="modal-bsentrep">BSENTREP</a></header>
         <h1 class="bsentrep">Bachelor of Science in <br> Entrepreneurship</h1>
-        <span><i class="bx bx-plus-medical" id="fiveicon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="fiveicon"></i></span>
         <h2 class="five">100 Students</h2>
     </div>
 
     <div class="box6">
         <header><a href="#" data-target="modal-bsba">BSBA</a></header>
         <h1 class="bsba">Bachelor of Science in <br> Business Administration</h1>
-        <span><i class="bx bx-plus-medical" id="sixicon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="sixicon"></i></span>
         <h2 class="six">100 Students</h2>
     </div>
 
     <div class="box7">
         <header><a href="#" data-target="modal-bsais">BSAIS</a></header>
         <h1 class="bsais">Bachelor of Science in <br> Accounting Information System</h1>
-        <span><i class="bx bx-plus-medical" id="sevenicon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="sevenicon"></i></span>
         <h2 class="seven">100 Students</h2>
     </div>
 
     <div class="box8">
         <header><a href="#" data-target="modal-bsoa">BSOA</a></header>
         <h1 class="bsoa">Bachelor of Science in <br> Office Administration</h1>
-        <span><i class="bx bx-plus-medical" id="eighticon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="eighticon"></i></span>
         <h2 class="eight">100 Students</h2>
     </div>
 
     <div class="box9">
         <header><a href="#" data-target="modal-bped">BPED</a></header>
         <h1 class="bped">Bachelor of Science in <br> Physical Education</h1>
-        <span><i class="bx bx-plus-medical" id="nineicon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="nineicon"></i></span>
         <h2 class="nine">100 Students</h2>
     </div>
 
     <div class="box10">
         <header><a href="#" data-target="modal-btled">BTLED</a></header>
         <h1 class="btled">Bachelor of Science in <br> Technological & Livelihood <br> Education</h1>
-        <span><i class="bx bx-plus-medical" id="tenicon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="tenicon"></i></span>
         <h2 class="ten">100 Students</h2>
     </div>
 
     <div class="box11">
         <header><a href="#" data-target="modal-beed">BEED</a></header>
         <h1 class="beed">Bachelor of Science in <br> Elementary Education</h1>
-        <span><i class="bx bx-plus-medical" id="elevenicon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="elevenicon"></i></span>
         <h2 class="eleven">100 Students</h2>
     </div>
 
     <div class="box12">
         <header><a href="#" data-target="modal-bsed">BSED</a></header>
         <h1 class="bsed">Bachelor of Science in <br> Secondary Education</h1>
-        <span><i class="bx bx-plus-medical" id="twelveicon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="twelveicon"></i></span>
         <h2 class="twelve">100 Students</h2>
     </div>
 
@@ -132,7 +133,7 @@
     <div class="box13">
         <header><a href="#" data-target="modal-bstm">BSTM</a></header>
         <h1 class="bstm">Bachelor of Science in <br> Tourism Management</h1>
-        <span><i class="bx bx-plus-medical" id="thirteenicon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="thirteenicon"></i></span>
         <h2 class="thirteen">100 Students</h2>
     </div>
 
@@ -140,7 +141,7 @@
     <div class="box14">
         <header><a href="#" data-target="modal-bscpe">BSCpE</a></header>
         <h1 class="bscpe">Bachelor of Science in <br> Computer Engineering</h1>
-        <span><i class="bx bx-plus-medical" id="fourteenicon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="fourteenicon"></i></span>
         <h2 class="fourteen">100 Students</h2>
     </div>
 
@@ -148,7 +149,7 @@
     <div class="box15">
         <header><a href="#" data-target="modal-bsp">BSP</a></header>
         <h1 class="bsp">Bachelor of Science in <br> Psychology</h1>
-        <span><i class="bx bx-plus-medical" id="fifteenicon"></i></span>
+        <span><i class="fas fa-briefcase-medical" id="fifteenicon"></i></span>
         <h2 class="fifteen">100 Students</h2>
     </div>
 

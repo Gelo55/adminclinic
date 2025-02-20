@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Clinic Management System</title>
-    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/dashadmin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
@@ -55,6 +55,7 @@
   </div>
   <span><i class="fas fa-notes-medical"></i></span>
   <div class="card-body2">
+    <h2 id="total-admit">0</h2> <!-- Display total admits -->
   </div>
 </div>
 
@@ -253,5 +254,23 @@ for (i = 0; i < dropdown.length; i++) {
             }
         });
     </script>
+
+<script>
+    function updateTotalAdmit() {
+        fetch('get_total_admits.php')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("total-admit").innerText = data.total;
+            })
+            .catch(error => console.error('Error fetching total admits:', error));
+    }
+
+    // Fetch the count on page load and refresh every 10 seconds
+    document.addEventListener("DOMContentLoaded", () => {
+        updateTotalAdmit();
+        setInterval(updateTotalAdmit, 10000);
+    });
+</script>
+
 </body>
 </html>

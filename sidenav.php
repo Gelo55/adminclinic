@@ -100,8 +100,7 @@
       <i class="fa fa-caret-down" id="fifth"></i>
     </button>
     <div class="dropdown-container4">
-    <a class="dropdown-a" href="medication.php"><span class="droplinks_name">Medication</span></a>
-    <a class="dropdown-a" href="equipment.php"><span class="droplinks_name">Equipment</span></a>
+    <a class="dropdown-a" href="medinventory.php"><span class="droplinks_name">Medication</span></a>
      </div>
 
           </div><br>

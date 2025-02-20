@@ -6,6 +6,7 @@ body{
     box-sizing: border-box;
 }
 
+
 .sidenav{
   height: 100%;
   width: 280px;
@@ -852,8 +853,6 @@ background-color: #555; /* Scrollbar color on hover */
 /* Breadcrumb */
 
 
-
-
 .container{
  height: 100%;
  width: 100%;
@@ -877,65 +876,86 @@ background-color: #555; /* Scrollbar color on hover */
   width: 10%;
 }
 
-.card-student{
+.box{
+    height: 35%;
     width: 25%;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
+    color: black;
+    background-color: snow;
+    border-radius: 5%;
     position: relative;
+    left: 20%;
+    top: 20%;
+}
+
+.box header{
+    background-color: black;
+    height: 25%;
+    width: 100%;
+}
+
+.box header i{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: -25%;
     left: 6%;
-    top: 10%;
 }
 
-.card-professor{
+.box li{
+    font-size: 20px;
+    list-style-type: circle;
+    margin-top: 5%;
+}
+
+.box h1{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    left: 13%;
+    top: 30%;
+}
+
+.box3{
+    height: 35%;
     width: 25%;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
+    color: black;
+    background-color: snow;
+    border-radius: 5%;
     position: relative;
-    left: 36%;
-    top: -11.5%;
+    left: 53%;
+    top: -15%;
 }
 
-.card-employee{
-    width: 25%;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-    left: 66%;
-    top: -33%;
+.box3 header{
+    background-color: black;
+    height: 25%;
+    width: 100%;
 }
 
-.title {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.stats {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-}
-.progress-bar {
-    height: 8px;
-    border-radius: 4px;
-    background: #e0e0e0;
-    margin-top: 10px;
+.box3 header i{
+    font-size: 20px;
+    color: white;
     position: relative;
+    top: -25%;
+    left: 6%;
 }
-.progress {
-    height: 100%;
-    border-radius: 4px;
+
+.box3 li{
+    font-size: 20px;
+    list-style-type: circle;
+    margin-top: 5%;
 }
-.card-student .progress { background: green; width: 74%; }
-.card-professor .progress { background: red; width: 70%; }
-.card-employee .progress { background: blue; width: 25%; }
+
+.box3 h1{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    left: 13%;
+    top: 30%;
+}
+
 
 /* Style for notification box */
 .notification-box {

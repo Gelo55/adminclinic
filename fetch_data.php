@@ -1,22 +1,45 @@
-
 <?php
+include 'database.php'; // Ensure database connection
 
-if (isset($_GET['table'])) {
-    $table = preg_replace('/[^a-zA-Z0-9_]/', '', $_GET['table']);
+$course = isset($_POST['course']) ? $_POST['course'] : "";
+$year_level = isset($_POST['year_level']) ? $_POST['year_level'] : "";
+$section = isset($_POST['section']) ? $_POST['section'] : "";
 
-    $sql = "SELECT * FROM `$table`";
-    $result = $conn->query($sql);
+// Build the query dynamically based on filters
+$query = "SELECT * FROM students WHERE 1";
 
-    $data = [];
-
-    if ($result->num_rows > 0) {
-        while ($row = $result->fetch_assoc()) {
-            $data[] = $row;
-        }
-    }
-
-    echo json_encode($data);
+if (!empty($course)) {
+    $query .= " AND course = '" . mysqli_real_escape_string($conn, $course) . "'";
+}
+if (!empty($year_level)) {
+    $query .= " AND year_level = '" . mysqli_real_escape_string($conn, $year_level) . "'";
+}
+if (!empty($section)) {
+    $query .= " AND section LIKE '%" . mysqli_real_escape_string($conn, $section) . "%'";
 }
 
-$conn->close();
+$result = mysqli_query($conn, $query);
+
+while ($row = mysqli_fetch_assoc($result)) {
+    echo "<tr>
+        <td>{$row['firstname']}</td>
+        <td>{$row['lastname']}</td>
+        <td>{$row['middlename']}</td>
+        <td>{$row['student_number']}</td>
+        <td>{$row['course']}</td>
+        <td>{$row['year_level']}</td>
+        <td>{$row['section']}</td>
+        <td>{$row['age']}</td>
+        <td>{$row['gender']}</td>
+        <td>{$row['address']}</td>
+        <td>{$row['contact_number']}</td>
+        <td>{$row['parent_contact']}</td>
+        <td>{$row['disability_status']}</td>
+        <td>{$row['illness']}</td>
+        <td>
+            <a href='edit_student.php?id={$row["id"]}' class='btn btn-primary btn-sm'>Edit</a>
+            <button class='btn btn-danger btn-sm' onclick='deleteStudent({$row["id"]})'>Delete</button>
+        </td>
+    </tr>";
+}
 ?>

@@ -815,7 +815,7 @@ background-color: #555; /* Scrollbar color on hover */
     /* Center align on smaller screens */
     text-align: left;
     position: relative;
-    left: -60%;
+    left: -35%;
     top: -15px;
 }
 
@@ -861,7 +861,7 @@ background-color: #555; /* Scrollbar color on hover */
 /* --FRAME -- */
 .frame {
   background-color: rgba(168, 168, 168, 0.2); 
-  height: 90vh;
+  height: 215vh;
   width: 117%;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
   box-sizing: border-box; 
@@ -877,553 +877,81 @@ background-color: #555; /* Scrollbar color on hover */
   width: 10%;
 }
 
-
-.box{
-    height: 35%;
-    width: 20%;
-    box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
-    color: black;
-    background-color: white;
-    border-radius: 5%;
+#inventoryReport {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 8px solid #a7c7e7;
     position: relative;
-    left: 5%;
-    top: -3.5%;
+    top: 4%;
 }
-
-.box header{
-  height: 70px;
-  background-color: limegreen;
-  border-bottom: 2px solid black;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
+h2 {
+    text-align: center;
+    color: #333;
 }
-
-.box a{
-    font-size: 30px;
-    font-weight: 800;
-    color: black;
+.section-title {
+    background: #2c3e50;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 20px;
+}
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.form-group label {
+    width: 40%;
+    font-weight: bold;
+}
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 58%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea {
+    height: 40px;
+    resize: none;
+}
+.received-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.received-box {
+    width: 48%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+.btn-download {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    background: #033683;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     position: relative;
-    left: 30%;
-    top: 20%;
+    top: 90px;
+    left: 45%;
+}
+.btn-download:hover {
+    background: #4D6EA0;
 }
 
-.box a:hover{
-  border-bottom: 1px solid white;
-}
-
-
-.box .stem{
-  font-size: 20px;
-  color: black;
-  position: relative;
-  left: 5%;
-  top: 20px;
-}
-
-.box .one{
-  font-size: 20px;
-  color: black;
-  position: relative;
-  left: 52%;
-  top: 35px;
-}
-
-#firsticon{
-  font-size: 30px;
-  position: relative;
-  top: 25%;
-  left: 5%;
-}
-
-
-.box2{
-  height: 35%;
-  width: 20%;
-  box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
-  color: black;
-  background-color: white;
-  border-radius: 5%;
-  position: relative;
-  left: 27%;
-  top: -38.5%;
-}
-
-.box2 header{
-  height: 70px;
-  background-color: red;
-  border-bottom: 2px solid black;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
-}
-
-.box2 a{
-  font-size: 30px;
-  font-weight: 800;
-  color: black;
-  position: relative;
-  left: 35%;
-  top: 20%;
-}
-
-.box2 a:hover{
-border-bottom: 1px solid white;
-}
-
-
-.box2 .abm{
-  font-size: 20px;
-  color: black;
-  position: relative;
-  left: 14%;
-  top: 20px;
-}
-
-.box2 .two{
-  font-size: 20px;
-  color: black;
-  position: relative;
-  left: 52%;
-  top: 35px;
-}
-
-#secondicon{
-  font-size: 30px;
-  position: relative;
-  top: 25%;
-  left: 5%;
-}
-
-
-.box3{
-  height: 35%;
-  width: 20%;
-  box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
-  color: black;
-  background-color: white;
-  border-radius: 5%;
-  position: relative;
-  left: 49%;
-  top: -73.5%;
-}
-
-.box3 header{
-  height: 70px;
-  background-color: blue;
-  border-bottom: 2px solid black;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
-}
-
-.box3 a{
-  font-size: 30px;
-  font-weight: 800;
-  color: black;
-  position: relative;
-  left: 30%;
-  top: 20%;
-}
-
-.box3 a:hover{
-border-bottom: 1px solid white;
-}
-
-
-.box3 .humss{
-  font-size: 20px;
-  color: black;
-  position: relative;
-  left: 3%;
-  top: 20px;
-}
-
-.box3 .three{
-  font-size: 20px;
-  color: black;
-  position: relative;
-  left: 50%;
-  top: 55px;
-}
-
-#thirdicon{
-  font-size: 30px;
-  position: relative;
-  top: 35%;
-  left: 5%;
-}
-
-
-.box4{
-  height: 35%;
-  width: 20%;
-  box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
-  color: black;
-  background-color: white;
-  border-radius: 5%;
-  position: relative;
-  left: 71%;
-  top: -108.5%;
-}
-
-.box4 header{
-  height: 70px;
-  background-color: pink;
-  border-bottom: 2px solid black;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
-}
-
-.box4 a{
-  font-size: 30px;
-  font-weight: 800;
-  color: black;
-  position: relative;
-  left: 40%;
-  top: 20%;
-}
-
-.box4 a:hover{
-border-bottom: 1px solid white;
-}
-
-
-.box4 .he{
-  font-size: 20px;
-  color: black;
-  position: relative;
-  left: 23%;
-  top: 20px;
-}
-
-.box4 .four{
-  font-size: 20px;
-  color: black;
-  position: relative;
-  left: 52%;
-  top: 55px;
-}
-
-#fouricon{
-  font-size: 30px;
-  position: relative;
-  top: 35%;
-  left: 5%;
-}
-
-
-.box5{
-  height: 35%;
-  width: 20%;
-  box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
-  color: black;
-  background-color: white;
-  border-radius: 5%;
-  position: relative;
-  left: 38%;
-  top: -103%;
-}
-
-.box5 header{
-  height: 70px;
-  background-color: orange;
-  border-bottom: 2px solid black;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
-}
-
-.box5 a{
-  font-size: 30px;
-  font-weight: 800;
-  color: black;
-  position: relative;
-  left: 40%;
-  top: 20%;
-}
-
-.box5 a:hover{
-border-bottom: 1px solid white;
-}
-
-
-.box5 .ict{
-  font-size: 20px;
-  color: black;
-  position: relative;
-  left: 2%;
-  top: 20px;
-}
-
-.box5 .five{
-  font-size: 20px;
-  color: black;
-  position: relative;
-  left: 52%;
-  top: 35px;
-}
-
-#fiveicon{
-  font-size: 30px;
-  position: relative;
-  top: 25%;
-  left: 5%;
-}
-
-.box6{
-  height: 35%;
-  width: 20%;
-  box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
-  color: black;
-  background-color: white;
-  border-radius: 5%;
-  position: relative;
-  left: 15%;
-  top: -138%;
-}
-
-.box6 header{
-  height: 70px;
-  background-color: yellow;
-  border-bottom: 2px solid black;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
-}
-
-.box6 a{
-  font-size: 30px;
-  font-weight: 800;
-  color: black;
-  position: relative;
-  left: 40%;
-  top: 20%;
-}
-
-.box6 a:hover{
-border-bottom: 1px solid white;
-}
-
-
-.box6 .gas{
-  font-size: 20px;
-  color: black;
-  position: relative;
-  left: 12%;
-  top: 20px;
-}
-
-.box6 .six{
-  font-size: 20px;
-  color: black;
-  position: relative;
-  left: 52%;
-  top: 55px;
-}
-
-#sixicon{
-  font-size: 30px;
-  position: relative;
-  top: 35%;
-  left: 5%;
-}
-
-
-.box7{
-  height: 35%;
-  width: 20%;
-  box-shadow:  -10px 0 10px rgba(0, 0, 0, 0.211);
-  color: black;
-  background-color: white;
-  border-radius: 5%;
-  position: relative;
-  left: 61%;
-  top: -173%;
-}
-
-.box7 header{
-  height: 70px;
-  background-color: yellow;
-  border-bottom: 2px solid black;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
-}
-
-.box7 a{
-  font-size: 30px;
-  font-weight: 800;
-  color: black;
-  position: relative;
-  left: 40%;
-  top: 20%;
-}
-
-.box7 a:hover{
-border-bottom: 1px solid white;
-}
-
-
-.box7 .pa{
-  font-size: 20px;
-  color: black;
-  position: relative;
-  left: 23%;
-  top: 20px;
-}
-
-.box7 .seven{
-  font-size: 20px;
-  color: black;
-  position: relative;
-  left: 55%;
-  top: 55px;
-}
-
-#sevenicon{
-  font-size: 30px;
-  position: relative;
-  top: 35%;
-  left: 5%;
-}
-
-
-.clinlogo{
-  height: 100px;
-  width: 8%;
-  border-radius: 100px;
-  position: relative;
-  left: 30%;
-  top: 15px;
-
-}
-
-.cliniclogo h2{
-  font-size: 40px;
-  position: relative;
-  left: 39%;
-  top: -55px;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.modal h1{
-  color: black;
-  font-size: 20px;
-}
-
-.modal.active {
-  display: block;
-}
-
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-}
-
-.overlay.active {
-  display: block;
-}
-
-.modal .stem-level {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: white;
-  background-color: green;
-  border-radius: 5px;
-  width: 50px;
-}
-
-
-.modal .abm-level {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: white;
-  background-color: red;
-  border-radius: 5px;
-  width: 50px;
-}
-
-
-.modal .humss-level {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: white;
-  background-color: blue;
-  border-radius: 5px;
-  width: 50px;
-}
-
-
-.modal .he-level {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: white;
-  background-color: pink;
-  border-radius: 5px;
-  width: 50px;
-}
-
-
-.modal .ict-level {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: white;
-  background-color: orange;
-  border-radius: 5px;
-  width: 50px;
-}
-
-
-.modal .gas-level {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: white;
-  background-color: yellow;
-  border-radius: 5px;
-  width: 50px;
-}
-
-
-.modal .pa-level {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: white;
-  background-color: yellow;
-  border-radius: 5px;
-  width: 50px;
-}
-
-.modal a:hover {
-  background-color: maroon;
-}
 
 /* Style for notification box */
 .notification-box {
