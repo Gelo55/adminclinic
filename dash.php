@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Clinic Management System</title>
-    <link rel="stylesheet" href="assets/css/dashadmin.css">
+    <link rel="stylesheet" href="assets/css/admindash.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
@@ -41,10 +41,11 @@
 
 <div class="card">
   <div class="card-header">
-    <h1>Total SHS Medical</h1>
+    <h1>Total Medical</h1>
   </div>
   <span><i class="fas fa-briefcase-medical"></i></span>
   <div id="card-body">
+  <h2 id="student-count">0</h2>
   </div>
 </div>
 
@@ -62,10 +63,11 @@
 
 <div class="card3">
   <div class="card-header3">
-    <h1>Total College Medical</h1>
+    <h1>Total Medicine</h1>
   </div>
   <span><i class="fas fa-briefcase-medical"></i></span>
   <div class="card-body3">
+  <h2 id="medicine-count">0</h2>
   </div>
 </div>
 
@@ -133,11 +135,17 @@
           <!-- Chart container -->
     <div id="chart"></div>
 
-
+    
     
     </div>
 </div>
 
+<footer class="footer">
+  <div class="footer-container">
+    <p>&copy; 2025 Clinic Management System. All rights reserved.</p>
+    <p>Developed by <strong>Abargos and Forcado</strong></p>
+  </div>
+</footer>
 
     <script type="text/javascript">
     function toggleNav() {
@@ -270,6 +278,38 @@ for (i = 0; i < dropdown.length; i++) {
         updateTotalAdmit();
         setInterval(updateTotalAdmit, 10000);
     });
+</script>
+
+
+<script>
+  function fetchStudentCount() {
+    fetch('get_students_count.php') // Call the PHP script
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('student-count').innerText = data;
+      })
+      .catch(error => console.error('Error fetching student count:', error));
+  }
+
+  fetchStudentCount(); // Call on page load
+
+  setInterval(fetchStudentCount, 5000); // Auto-refresh every 5 seconds (Optional)
+</script>
+
+
+<script>
+  function fetchMedicineCount() {
+    fetch('get_medicine_count.php') // Call the PHP script
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('medicine-count').innerText = data;
+      })
+      .catch(error => console.error('Error fetching medicine count:', error));
+  }
+
+  fetchMedicineCount(); // Call on page load
+
+  setInterval(fetchMedicineCount, 5000); // Auto-refresh every 5 seconds (Optional)
 </script>
 
 </body>

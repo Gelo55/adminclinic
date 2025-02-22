@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Clinic Management System</title>
-    <link rel="stylesheet" href="assets/css/medical.css">
+    <link rel="stylesheet" href="assets/css/medform.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
@@ -39,8 +39,11 @@
 <!-- frame -->
 <div class= "frame">
 
-<div class="container mt-5">
+<div class="stud-container mt-5">
     
+    <header><img src="assets/images/clinlogo.jpg" alt="" id="stud-logo"></header>
+    <h2 class="medform">Medical Form</h2>
+
     <form id="studentForm">
         <input type="hidden" id="studentId" name="id">
 
@@ -53,45 +56,78 @@
                 <label>Last Name</label>
                 <input type="text" id="lastname" name="lastname" class="form-control" required>
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-md-4 mb-4">
                 <label>Middle Name</label>
                 <input type="text" id="middlename" name="middlename" class="form-control">
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-4 mb-3">
+            <div class="col-md-2 mb-3">
                 <label>Student Number</label>
                 <input type="text" id="student_number" name="student_number" class="form-control" required>
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-md-2 mb-3">
                 <label>Course</label>
                 <select id="course" name="course" class="form-control">
                     <option value="">Select Course</option>
                     <option value="STEM">STEM</option>
                     <option value="ABM">ABM</option>
+                    <option value="HUMSS">HUMSS</option>
+                    <option value="H.E">H.E</option>
+                    <option value="I.C.T">I.C.T</option>
+                    <option value="GAS">GAS</option>
+                    <option value="P.A">P.A</option>
+                    <option value="BSIT">BSIT</option>
+                    <option value="BSCRIM">BSCRIM</option>
+                    <option value="BLIS">BLIS</option>
+                    <option value="BSHM">BSHM</option>
+                    <option value="BSENTREP">BSENTREP</option>
+                    <option value="BSBA">BSBA</option>
+                    <option value="BSAIS">BSAIS</option>
+                    <option value="BSOA">BSOA</option>
+                    <option value="BPED">BPED</option>
+                    <option value="BTLED">BTLED</option>
+                    <option value="BEED">BEED</option>
+                    <option value="BSED">BSED</option>
+                    <option value="BSTM">BSTM</option>
+                    <option value="BSCpE">BSCpE</option>
+                    <option value="BSP">BSP</option>
                 </select>
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-md-2 mb-3">
                 <label>Year Level</label>
                 <select id="year_level" name="year_level" class="form-control">
                     <option value="">Select Year</option>
-                    <option value="11">Grade 11</option>
-                    <option value="12">Grade 12</option>
+                    <option value="Grade 11">Grade 11</option>
+                    <option value=" Grade 12">Grade 12</option>
+                    <option value="1st Year">1st Year</option>
+                    <option value=" 2nd Year">2nd Year</option>
+                    <option value="3rd Year">3rd Year</option>
+                    <option value="4th Year">4th Year</option>
                 </select>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4 mb-3">
+            <div class="col-md-2 mb-3">
                 <label>Section</label>
-                <input type="text" id="section" name="section" class="form-control">
+                <select id="section" name="section" class="form-control">
+                    <option value="">Select Section</option>
+                    <option value="001">001</option>
+                    <option value=" 002">002</option>
+                    <option value="003">003</option>
+                    <option value="004">004</option>
+                    <option value="005">005</option>
+                    <option value="006">006</option>
+                    <option value="007">007</option>
+                    <option value="008">008</option>
+                    <option value="009">009</option>
+                    <option value="010">010</option>
+                </select>
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-md-2 mb-3">
                 <label>Age</label>
                 <input type="number" id="age" name="age" class="form-control">
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-md-2 mb-4">
                 <label>Gender</label>
                 <select id="gender" name="gender" class="form-control">
                     <option value="">Select Gender</option>
@@ -102,32 +138,62 @@
         </div>
 
         <div class="row">
-            <div class="col-md-4 mb-3">
+            <div class="col-md-3 mb-3">
                 <label>Address</label>
                 <input type="text" id="address" name="address" class="form-control">
             </div>
-            <div class="col-md-4 mb-3">
+
+            <div class="col-md-3 mb-3">
+                <label>Email</label>
+                <input type="email" id="email" name="email" class="form-control">
+            </div>
+
+            <div class="col-md-2 mb-4">
                 <label>Contact Number</label>
                 <input type="text" id="contact_number" name="contact_number" class="form-control">
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-md-2 mb-3">
                 <label>Parent Contact</label>
                 <input type="text" id="parent_contact" name="parent_contact" class="form-control">
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4 mb-3">
+            <div class="col-md-2 mb-3">
                 <label>Disability Status</label>
-                <input type="text" id="disability_status" name="disability_status" class="form-control">
+                <select id="disability_status" name="disability_status" class="form-control">
+                    <option value="">Select Disability Status</option>
+                    <option value="Normal">Normal</option>
+                    <option value="PWD">PWD</option>
+                </select>
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-md-3 mb-3">
                 <label>Illness</label>
                 <input type="text" id="illness" name="illness" class="form-control">
             </div>
+            <div class="col-md-2 mb-3">
+                <label>Allergies</label>
+                <input type="text" id="allergies" name="allergies" class="form-control">
+            </div>
+            <div class="col-md-2 mb-3">
+                <label>Blood_type</label>
+                <select id="blood_type" name="blood_type" class="form-control">
+                    <option value="">Select Blood Type</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="AB">AB</option>
+                    <option value="O">O</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </div>
         </div>
 
-        <button type="submit" class="btn btn-success">Save Student</button>
+
+        <button type="submit" class="btn btn-success" id="btnsave">Save Student</button>
     </form>
 </div>
     
@@ -234,10 +300,13 @@ for (i = 0; i < dropdown.length; i++) {
                     age: $("#age").val(),
                     gender: $("#gender").val(),
                     address: $("#address").val(),
+                    email: $("#email").val(),
                     contact_number: $("#contact_number").val(),
                     parent_contact: $("#parent_contact").val(),
                     disability_status: $("#disability_status").val(),
-                    illness: $("#illness").val()
+                    illness: $("#illness").val(),
+                    allergies: $("#allergies").val(),
+                    blood_type: $("#blood_type").val()
                 };
                 
                 $.post("insert_update_student.php", formData, function(response) {
@@ -245,6 +314,9 @@ for (i = 0; i < dropdown.length; i++) {
                     fetchStudents(); // Reload data
                     $("#studentForm")[0].reset();
                     $("#studentId").val('');
+
+                     // Redirect to medicalstudent.php after successful submission
+        window.location.href = "medicalstudent.php";
                 });
             });
 

@@ -25,7 +25,7 @@ if (isset($_GET['id'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Clinic Management System</title>
-    <link rel="stylesheet" href="assets/css/medical.css">
+    <link rel="stylesheet" href="assets/css/medform.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
@@ -59,7 +59,7 @@ if (isset($_GET['id'])) {
 <div class= "frame">
 
 <div class="container mt-5">
-    <h2>Edit Student Information</h2>
+    <h2 class="edit-stud">Edit Student Information</h2>
     
     <?php if (isset($_GET['error'])): ?>
         <div class="alert alert-danger"><?php echo $_GET['error']; ?></div>
@@ -97,6 +97,25 @@ if (isset($_GET['id'])) {
                     <option value="STEM" <?php if ($student['course'] == 'STEM') echo 'selected'; ?>>STEM</option>
                     <option value="ABM" <?php if ($student['course'] == 'ABM') echo 'selected'; ?>>ABM</option>
                     <option value="HUMSS" <?php if ($student['course'] == 'HUMSS') echo 'selected'; ?>>HUMSS</option>
+                    <option value="H.E" <?php if ($student['course'] == 'H.E') echo 'selected'; ?>>H.E</option>
+                    <option value="I.C.T" <?php if ($student['course'] == 'I.C.T') echo 'selected'; ?>>I.C.T</option>
+                    <option value="GAS" <?php if ($student['course'] == 'GAS') echo 'selected'; ?>>GAS</option>
+                    <option value="P.A" <?php if ($student['course'] == 'P.A') echo 'selected'; ?>>P.A</option>
+                    <option value="BSIT" <?php if ($student['course'] == 'BSIT') echo 'selected'; ?>>BSIT</option>
+                    <option value="BSCRIM" <?php if ($student['course'] == 'BSCRIM') echo 'selected'; ?>>BSCRIM</option>
+                    <option value="BLIS" <?php if ($student['course'] == 'BLIS') echo 'selected'; ?>>BLIS</option>
+                    <option value="BSHM" <?php if ($student['course'] == 'BSHM') echo 'selected'; ?>>BSHM</option>
+                    <option value="BSENTREP" <?php if ($student['course'] == 'BSENTREP') echo 'selected'; ?>>BSENTREP</option>
+                    <option value="BSBA" <?php if ($student['course'] == 'BSBA') echo 'selected'; ?>>BSBA</option>
+                    <option value="BSAIS" <?php if ($student['course'] == 'BSAIS') echo 'selected'; ?>>BSAIS</option>
+                    <option value="BSOA" <?php if ($student['course'] == 'BSOA') echo 'selected'; ?>>BSOA</option>
+                    <option value="BPED" <?php if ($student['course'] == 'BPED') echo 'selected'; ?>>BPED</option>
+                    <option value="BTLED" <?php if ($student['course'] == 'BTLED') echo 'selected'; ?>>BTLED</option>
+                    <option value="BEED" <?php if ($student['course'] == 'BEED') echo 'selected'; ?>>BEED</option>
+                    <option value="BSED" <?php if ($student['course'] == 'BSED') echo 'selected'; ?>>BSED</option>
+                    <option value="BSTM" <?php if ($student['course'] == 'BSTM') echo 'selected'; ?>>BSTM</option>
+                    <option value="BSCpE" <?php if ($student['course'] == 'BSCpE') echo 'selected'; ?>>BSpE</option>
+                    <option value="BSP" <?php if ($student['course'] == 'BSP') echo 'selected'; ?>>BSP</option>
                 </select>
             </div>
 
@@ -105,6 +124,10 @@ if (isset($_GET['id'])) {
                 <select name="year_level" class="form-control" required>
                     <option value="Grade 11" <?php if ($student['year_level'] == 'Grade 11') echo 'selected'; ?>>Grade 11</option>
                     <option value="Grade 12" <?php if ($student['year_level'] == 'Grade 12') echo 'selected'; ?>>Grade 12</option>
+                    <option value="1st Year" <?php if ($student['year_level'] == '1st Year') echo 'selected'; ?>>1st Year</option>
+                    <option value="2nd Year" <?php if ($student['year_level'] == '2nd Year') echo 'selected'; ?>>2nd Year</option>
+                    <option value="3rd Year" <?php if ($student['year_level'] == '3rd Year') echo 'selected'; ?>>3rd Year</option>
+                    <option value="4th Year" <?php if ($student['year_level'] == '4th Year') echo 'selected'; ?>>4th Year</option>
                 </select>
             </div>
         </div>
@@ -112,7 +135,18 @@ if (isset($_GET['id'])) {
         <div class="row mt-3">
             <div class="col-md-4">
                 <label>Section</label>
-                <input type="text" name="section" class="form-control" value="<?php echo htmlspecialchars($student['section']); ?>" required>
+                <select name="section" class="form-control" required>
+                    <option value="001" <?php if ($student['gender'] == '001') echo 'selected'; ?>>001</option>
+                    <option value="002" <?php if ($student['gender'] == '002') echo 'selected'; ?>>002</option>
+                    <option value="003" <?php if ($student['gender'] == '003') echo 'selected'; ?>>003</option>
+                    <option value="004" <?php if ($student['gender'] == '004') echo 'selected'; ?>>004</option>
+                    <option value="005" <?php if ($student['gender'] == '005') echo 'selected'; ?>>005</option>
+                    <option value="006" <?php if ($student['gender'] == '006') echo 'selected'; ?>>006</option>
+                    <option value="007" <?php if ($student['gender'] == '007') echo 'selected'; ?>>007</option>
+                    <option value="008" <?php if ($student['gender'] == '008') echo 'selected'; ?>>008</option>
+                    <option value="009" <?php if ($student['gender'] == '009') echo 'selected'; ?>>009</option>
+                    <option value="010" <?php if ($student['gender'] == '010') echo 'selected'; ?>>010</option>
+                </select>
             </div>
 
             <div class="col-md-4">
@@ -131,9 +165,14 @@ if (isset($_GET['id'])) {
         </div>
 
         <div class="row mt-3">
-            <div class="col-md-6">
+            <div class="col-md-3">
                 <label>Address</label>
                 <input type="text" name="address" class="form-control" value="<?php echo htmlspecialchars($student['address']); ?>" required>
+            </div>
+
+            <div class="col-md-3">
+                <label>Email</label>
+                <input type="text" name="email" class="form-control" value="<?php echo htmlspecialchars($student['email']); ?>" required>
             </div>
 
             <div class="col-md-3">
@@ -148,20 +187,49 @@ if (isset($_GET['id'])) {
         </div>
 
         <div class="row mt-3">
-            <div class="col-md-6">
+            <div class="col-md-3">
                 <label>Disability Status</label>
-                <input type="text" name="disability_status" class="form-control" value="<?php echo htmlspecialchars($student['disability_status']); ?>">
+                <select name="disability_status" class="form-control" required>
+                    <option value="Normal" <?php if ($student['disability_status'] == 'Normal') echo 'selected'; ?>>Normal</option>
+                    <option value="PWD" <?php if ($student['disability_status'] == 'PWD') echo 'selected'; ?>>PWD</option>
+    
+                </select>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-3">
                 <label>Illness</label>
                 <input type="text" name="illness" class="form-control" value="<?php echo htmlspecialchars($student['illness']); ?>">
+            </div>
+
+            <div class="col-md-3">
+                <label>Allergies</label>
+                <input type="text" name="allergies" class="form-control" value="<?php echo htmlspecialchars($student['allergies']); ?>">
+            </div>
+
+            <div class="col-md-3">
+                <label>Blood_type</label>
+                <select name="blood_type" class="form-control" required>
+                    <option value="" <?php if ($student['blood_type'] == 'Select Blood Type') echo 'selected'; ?>>Select Blood Type</option>
+                    <option value="A" <?php if ($student['blood_type'] == 'A') echo 'selected'; ?>>A</option>
+                    <option value="B" <?php if ($student['blood_type'] == 'B') echo 'selected'; ?>>B</option>
+                    <option value="AB" <?php if ($student['blood_type'] == 'AB') echo 'selected'; ?>>AB</option>
+                    <option value="O" <?php if ($student['blood_type'] == 'O') echo 'selected'; ?>>O</option>
+                    <option value="A+" <?php if ($student['blood_type'] == 'A+') echo 'selected'; ?>>A+</option>
+                    <option value="A-" <?php if ($student['blood_type'] == 'A-') echo 'selected'; ?>>A-</option>
+                    <option value="b+" <?php if ($student['blood_type'] == 'B+') echo 'selected'; ?>>B+</option>
+                    <option value="B-" <?php if ($student['blood_type'] == 'B-') echo 'selected'; ?>>B-</option>
+                    <option value="AB+" <?php if ($student['blood_type'] == 'AB+') echo 'selected'; ?>>AB+</option>
+                    <option value="AB-" <?php if ($student['blood_type'] == 'AB-') echo 'selected'; ?>>AB-</option>
+                    <option value="O+" <?php if ($student['blood_type'] == 'O+') echo 'selected'; ?>>O+</option>
+                    <option value="O-" <?php if ($student['blood_type'] == 'O-') echo 'selected'; ?>>O-</option>
+                </select>
+                </select>
             </div>
         </div>
 
         <div class="row mt-4">
             <div class="col-md-12">
-                <button type="submit" class="btn btn-success">Update Student</button>
+                <button type="submit" class="btn btn-success" id="btnupdate">Update Student</button>
                 <a href="medicalstudent.php" class="btn btn-secondary">Cancel</a>
             </div>
         </div>
@@ -271,6 +339,7 @@ for (i = 0; i < dropdown.length; i++) {
                     age: $("#age").val(),
                     gender: $("#gender").val(),
                     address: $("#address").val(),
+                    email: $("#email").val(),
                     contact_number: $("#contact_number").val(),
                     parent_contact: $("#parent_contact").val(),
                     disability_status: $("#disability_status").val(),

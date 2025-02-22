@@ -12,20 +12,23 @@ $section = mysqli_real_escape_string($conn, $_POST['section']);
 $age = intval($_POST['age']);
 $gender = mysqli_real_escape_string($conn, $_POST['gender']);
 $address = mysqli_real_escape_string($conn, $_POST['address']);
+$email = mysqli_real_escape_string($conn, $_POST['email']);
 $contact_number = mysqli_real_escape_string($conn, $_POST['contact_number']);
 $parent_contact = mysqli_real_escape_string($conn, $_POST['parent_contact']);
 $disability_status = mysqli_real_escape_string($conn, $_POST['disability_status']);
 $illness = mysqli_real_escape_string($conn, $_POST['illness']);
+$allergies = mysqli_real_escape_string($conn, $_POST['allergies']);
+$blood_type = mysqli_real_escape_string($conn, $_POST['blood_type']);
 
 if ($id) {
     $query = "UPDATE students SET firstname='$firstname', lastname='$lastname', middlename='$middlename',
         student_number='$student_number', course='$course', year_level='$year_level', section='$section',
-        age='$age', gender='$gender', address='$address', contact_number='$contact_number', 
-        parent_contact='$parent_contact', disability_status='$disability_status', illness='$illness'
+        age='$age', gender='$gender', address='$address', email='$email', contact_number='$contact_number', 
+        parent_contact='$parent_contact', disability_status='$disability_status', illness='$illness', allergies='$allergies', blood_type ='$blood_type'
         WHERE id='$id'";
 
     if ($conn->query($query) === TRUE) {
-        header("Location: index.php?success=Student updated successfully!");
+        header("Location: medicalstudent.php?success=Student updated successfully!");
         exit;
     } else {
         header("Location: edit_student.php?id=$id&error=" . urlencode("Failed to update student!"));
@@ -42,9 +45,9 @@ if ($id) {
     }
 
     $query = "INSERT INTO students (firstname, lastname, middlename, student_number, course, year_level, section, 
-        age, gender, address, contact_number, parent_contact, disability_status, illness) 
+        age, gender, address, email, contact_number, parent_contact, disability_status, illness) 
         VALUES ('$firstname', '$lastname', '$middlename', '$student_number', '$course', '$year_level', '$section', 
-        '$age', '$gender', '$address', '$contact_number', '$parent_contact', '$disability_status', '$illness')";
+        '$age', '$gender', '$address', '$email', '$contact_number', '$parent_contact', '$disability_status', '$illness', '$allergies', '$blood_type')";
 
     if ($conn->query($query) === TRUE) {
         header("Location: medicalstudent.php?success=Student added successfully!");
